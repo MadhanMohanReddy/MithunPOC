@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta charset="utf-8">
+
+
+<style>
+.node circle {
+  cursor: pointer;
+  stroke: #3182bd;
+  stroke-width: 1.5px;
+}
+
+.node text {
+  font: 10.5px sans-serif;
+  font-weight: bolder;
+  pointer-events: none;
+  text-anchor: middle;
+}
+
+line.link {
+  fill: none;
+  stroke: #9ecae1;
+  stroke-width: 1.5px;
+}
+    
+div.tooltip {	
+    position: absolute;			
+    text-align: left;			
+    width: 350px;					
+    height: 180px;					
+    padding: 2px;				
+    font: 12px sans-serif;		
+    background: lightsteelblue;	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;			
+}
+#nodes{
+	display: inline-block;
+	width: 20%;
+	float: left;
+}
+#graph{
+	display: inline-block;
+	width: 79%;
+}
+</style>
+<head>
+    <title>
+    I2E Textual Evidence Viz
+    </title>
+</head>
+<body>
+	<div id="nodes"></div>
+	<div id="graph"></div>
+</body>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+<script>
+
+var firstTime = true, nodeCounter = 0
+    
+var width = 1000,//window.innerWidth,
+    height = window.innerHeight-20,
+    root;
+
+var myUrl = window.location.href;
+var myHash = window.location.hash
+console.log(myHash);
+if(myHash != "")
+    {var myJSON = myHash.substring(1,myHash.length) + '.json';
+    console.log("Detected:"+myJSON)} 
+else 
+    {myJSON = "paricalcitol.json"
+    console.log("Undetected:"+myJSON)};
+    
+    
+var force = d3.layout.force()
+    .linkDistance(70)
+    .charge(-220)
+    .gravity(.1)
+    .size([width, height])
+    .on("tick", tick);
+
+var svg = d3.select("#graph").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+    
+    // Define the div for the tooltip
+var div = d3.select("#graph").append("div")	
+    .attr("class", "tooltip")				
+    .style("opacity", 0)
+	.style("display", "none");
+    
+
+rect2= svg.append('rect').transition().duration(500).attr('width', 450)
+                .attr('height', 110)
+                .attr('x', 15)
+                .attr('y', 10)
+                .style('fill', 'white')
+                .attr('stroke', 'black')
+text2 = svg.append('text').text('Click on a term (green) to expand.')
+                .attr('x', 25)
+                .attr('y', 30)
+                .attr('fill', 'black')
+text3 = svg.append('text').text('Click a term (blue) to collapse.')
+                .attr('x', 25)
+                .attr('y', 50)
+                .attr('fill', 'black')
+text4 = svg.append('text').text('Click on a study (orange) to open pubmed abstract.')
+                .attr('x', 25)
+                .attr('y', 90)
+                .attr('fill', 'black')
+text5 = svg.append('text').text('Hover over study (orange) to read textual evidence.')
+                .attr('x', 25)
+                .attr('y', 70)
+                .attr('fill', 'black')
+text6 = svg.append('text').text('Contacts: Nilofer.Jiwani@abbvie.com; Mark.Ciaccio@abbvie.com')
+                .attr('x', 25)
+                .attr('y', 110)
+                .attr('fill', 'black')
+img1 = svg.append('image')
+                .attr("xlink:href", "construction.gif")
+                .attr("x", "10")
+                .attr("y", "10")
+                .attr("width", width-10)
+                .attr("height", height-10)
+                .attr("opacity", .05);
+
+var link = svg.selectAll(".link"),
+    node = svg.selectAll(".node");
+
+    
+d3.json("http://ec2-54-241-26-67.us-west-1.compute.amazonaws.com:8080/solr/getsearchmedline?"+location.search.split('search_data=')[1], function(error, json) {
+  if (error) throw error;
+  root = [];
+  graphicalNodes = parseResponse(json.response.docs);
+  
+  createNodesList();	
+  
+  update();
+  update();
+});
+function createNodesList() {
+	var list = d3
+				.select('#nodes')
+				.append("div")
+				.style("height", height + "px")				
+				.style("overflow-y", "scroll");
+				
+	var labelEnter = list
+						.selectAll("div")
+						.data(graphicalNodes)
+						.enter()
+						.append("div");
+	
+	labelEnter
+		.append("input")
+		.attr("type", "checkbox")
+		.on("click", addNode);
+	
+	labelEnter
+		.append('label')
+		.text(function(d) { return d.name; });
+}
+function addNode(node) {
+	firstTime = false;
+	if (this.checked === true) {
+		root.push(node);
+	} else {
+		root.splice(root.indexOf(node), 1);
+	}	
+	click(node);
+}
+function parseResponse(nodes) {
+	var graphNodes = [];
+	nodes.forEach(function(node) {
+		var graphNode = graphNodes.filter(function(v) {
+			return v.name === node.disease;
+		})[0];
+		
+		if (graphNode) {
+			graphNode.children.push({"category": "relation", "color": "blue", "name": node.gene_symbol[0], "opacity": 0.9, "score": 1.0, "size": 							21250, "type": "triangle"});
+		} else {
+			graphNode = { "category": "disease", "color": "red", "name": node.disease, "opacity": 0.9, "score": 1.0, "size": 90000                  , "type": "circle", "children": [{ "category": "relation", "color": "blue", "name": node.gene_symbol[0], "opacity": 0.9, 				  "score": 1.0, "size": 21250, "type": "triangle" }] };
+			graphNodes.push(graphNode);
+		}
+	});
+	return graphNodes;
+};
+
+function update() {
+  var nodes = flatten(root),
+      links = d3.layout.tree().links(nodes);
+
+  closeAll(nodes);
+      
+  // Restart the force layout.
+  force
+      .nodes(nodes)
+      .links(links)
+      .start();
+    
+   // Update links.
+  link = link.data(links, function(d) { return d.target.id; });
+
+  link.exit().remove();
+
+  link.enter().insert("line", ".node")
+      .attr("class", "link");
+
+  // Update nodes.
+  node = node.data(nodes, function(d) { return d.id; });
+
+  node.exit().remove();
+
+  var nodeEnter = node.enter().append("g")
+      .attr("class", "node")
+      .on("click", click)
+      .on("mouseover", mouseover)
+      .on("mouseout",mouseout)
+      .call(force.drag);
+
+  nodeEnter.append("circle")
+      .attr("r", function(d) { return Math.sqrt(d.size) / 10 || 4.5; });
+
+  nodeEnter.append("text")
+      .attr("dy", ".35em")
+      .text(function(d) { return d.name; });
+
+  node.select("circle")
+      .style("fill", color);    
+}
+
+function tick() {
+  link.attr("x1", function(d) { return d.source.x; })
+      .attr("y1", function(d) { return d.source.y; })
+      .attr("x2", function(d) { return d.target.x; })
+      .attr("y2", function(d) { return d.target.y; });
+
+  node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+}
+
+function color(d) {
+  return d._children ? "lightgreen"// collapsed package
+      : d.children ? "#c6dbef" // expanded package
+      : "#fd8d3c"; // leaf node
+}
+
+// Toggle children on click.
+function click(d) {
+  if (d3.event && d3.event.defaultPrevented) return; // ignore drag
+  if (d.category=="study"){window.open(d.url,'_blank')};
+    if (d.children) {
+    d._children = d.children;
+    d.children = null;
+  } else {
+    d.children = d._children;
+    d._children = null;
+    ;
+  }
+  update();
+}
+    
+function mouseover(d) {
+    if(d.category=="study"){
+            div.transition()		
+                .duration(200)		
+                .style("opacity", .9);		
+            div	.html("Evidence: "+ d.description + "<p>" + "Pubmed ID: " + d.name)	
+                .style("left", (d3.event.pageX) + "px")		
+                .style("top", (d3.event.pageY - 28) + "px");	
+    console.log('Mouseing over');
+    }
+}
+    
+function mouseout(d){
+     div.transition()		
+                .duration(500)		
+                .style("opacity", 0);
+    console.log('Mousing out');
+}
+
+
+
+function closeAll(nodes) {
+    if(firstTime){
+        nodes.forEach(function(d){
+			if(d.category=="relation")
+			{d._children = d.children;
+			 d.children = null};
+			if(d.category=="disease")
+			{d._children = d.children;
+			d.children = null;
+			firstTime = false}
+		});
+    }
+}
+    
+// Returns a list of all nodes under the root.
+function flatten(root) {
+  var nodes = [];
+
+  function recurse(node) {
+    if (Array.isArray(node)) node.forEach(recurse);
+	if (node.children) node.children.forEach(recurse);
+	if (!Array.isArray(node)) {
+		if (!node.id) node.id = ++nodeCounter;
+		nodes.push(node);
+	}  
+  }
+
+  recurse(root);
+  return nodes;
+}
+
+</script>
+

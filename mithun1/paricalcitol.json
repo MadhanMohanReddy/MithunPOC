@@ -1,0 +1,29 @@
+[
+{"category": "test1", "color": "red", "name": "Paricalcitol", "opacity": 0.9, "score": 1.0, "size": 90000, "type": "circle", "url": "http://go/library",
+"children": [
+	{"category": "relation1", "color": "blue", "name": "treat", "opacity": 0.9, "score": 1.0, "size": 21249.10008042162, "type": "triangle", "url": "http://go/pikm"},
+	{"category": "relation2", "color": "blue", "name": "treat", "opacity": 0.9, "score": 1.0, "size": 21249.10008042162, "type": "triangle", "url": "http://go/pikm"}
+]},
+{"category": "test2", "color": "red", "name": "Paricalcitol2", "opacity": 0.9, "score": 1.0, "size": 90000, "type": "circle", "url": "http://go/library",
+"children": [
+	{"category": "relation3", "color": "blue", "name": "treat2", "opacity": 0.9, "score": 1.0, "size": 21249.10008042162, "type": "triangle", "url": "http://go/pikm"},
+	{"category": "relation4", "color": "blue", "name": "treat2", "opacity": 0.9, "score": 1.0, "size": 21249.10008042162, "type": "triangle", "url": "http://go/pikm"}
+]},
+{"category": "test3", "color": "red", "name": "Paricalcitol3", "opacity": 0.9, "score": 1.0, "size": 90000, "type": "circle", "url": "http://go/library",
+"children": [
+	{"category": "relation5", "color": "blue", "name": "treat3", "opacity": 0.9, "score": 1.0, "size": 21249.10008042162, "type": "triangle", "url": "http://go/pikm"},
+	{"category": "relation6", "color": "blue", "name": "treat3", "opacity": 0.9, "score": 1.0, "size": 21249.10008042162, "type": "triangle", "url": "http://go/pikm"}
+]},
+{"category": "test4", "color": "red", "name": "Paricalcitol4", "opacity": 0.9, "score": 1.0, "size": 90000, "type": "circle", "url": "http://go/library",
+"children": [
+	{"category": "relation5", "color": "blue", "name": "treat4", "opacity": 0.9, "score": 1.0, "size": 21249.10008042162, "type": "triangle", "url": "http://go/pikm"},
+	{"category": "relation6", "color": "blue", "name": "treat4", "opacity": 0.9, "score": 1.0, "size": 21249.10008042162, "type": "triangle", "url": "http://go/pikm"}
+]},
+{"category": "test5", "color": "red", "name": "Paricalcitol5", "opacity": 0.9, "score": 1.0, "size": 90000, "type": "circle", "url": "http://go/library",
+"children": [
+	{"category": "relation5", "color": "blue", "name": "treat5", "opacity": 0.9, "score": 1.0, "size": 21249.10008042162, "type": "triangle", "url": "http://go/pikm"},
+	{"category": "relation6", "color": "blue", "name": "treat5", "opacity": 0.9, "score": 1.0, "size": 21249.10008042162, "type": "triangle", "url": "http://go/pikm"}
+]}
+]
+
+

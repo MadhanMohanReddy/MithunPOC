@@ -1,0 +1,10 @@
+[
+{"category": "test1", "color": "red", "name": "Paricalcitol", "desc": "Paricalcitol<br /> desc asd asd asd asd asd ", "opacity": 0.9, "score": 1.0, "size": 90000, "type": "circle", "url": "http://go/library",
+"children": [
+	{"category": "relation1", "color": "blue", "name": "treat", "desc": "treat desc", "opacity": 0.9, "score": 1.0, "size": 21249.10008042162, "type": "triangle", "url": "http://go/pikm"}
+]},
+{"category": "test2", "color": "red", "name": "Paricalcitol2", "desc": "Paricalcitol2 desc", "opacity": 0.9, "score": 1.0, "size": 90000, "type": "circle", "url": "http://go/library",
+"children": [
+	{"category": "relation1", "color": "blue", "name": "treat", "desc": "treat desc", "opacity": 0.9, "score": 1.0, "size": 21249.10008042162, "type": "triangle", "url": "http://go/pikm"}
+]}
+]

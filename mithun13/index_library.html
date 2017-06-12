@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta charset="utf-8">
+
+
+<style>
+.node circle {
+  cursor: pointer;
+  stroke: #3182bd;
+  stroke-width: 1.5px;
+}
+
+.node text {
+  font: 10.5px sans-serif;
+  font-weight: bolder;
+  pointer-events: none;
+  text-anchor: middle;
+}
+
+line.link {
+  fill: none;
+  stroke: #9ecae1;
+  stroke-width: 1.5px;
+}
+    
+div.tooltip {	
+    position: absolute;			
+    text-align: left;			
+    width: 350px;					
+    height: 180px;					
+    padding: 2px;				
+    font: 12px sans-serif;		
+    background: lightsteelblue;	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;			
+}
+#nodes{
+	display: inline-block;
+	width: 20%;
+	float: left;
+}
+#graph{
+	display: inline-block;
+	width: 79%;
+}
+</style>
+<head>
+    <title>
+    I2E Textual Evidence Viz
+    </title>
+</head>
+<body>
+ <div><input type="file" id="myFile" onchange="filePicked(event)"></div>
+ <div id="nodes"></div>
+ <div id="graph"></div>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.full.min.js"></script>
+<script>
+function filePicked(oEvent) {
+	var oFile = oEvent.target.files[0];
+	var reader = new FileReader();
+	reader.onload = function(e) {
+		var data = e.target.result;
+		var cfb = XLSX.read(data, {type: 'binary'});
+		console.log(cfb)
+		cfb.SheetNames.forEach(function(sheetName) {			
+			var oJS = XLS.utils.sheet_to_json(cfb.Sheets[sheetName]); 
+			graphJson = createGraphJSON(oJS);
+			createNodesList(graphJson);
+			createGraph(); 
+		});
+	};
+	reader.readAsBinaryString(oFile);
+}
+function createGraphJSON(obj) {
+	var json = [];
+	obj.forEach(function(vRow) {
+		var gene = json.find(function(vJsonRow) { return vJsonRow.name === vRow["Gene Symbol"] });
+		if (gene) {
+			var relation = gene.children.find(function(vRelationRow) { return vRelationRow.name === vRow["Relation"] });
+			if (relation) {
+				var disease = relation.children.find(function(vDiseaseRow) { return vDiseaseRow.name === vRow["Phenotype"] });	
+				if (disease) {	
+					var study = disease.children.find(function(vStudyRow) { return vStudyRow.name === vRow["PMID"] });
+					if (study) {					
+					} else {
+						disease.children.push({"category": "study", "color": "blue", "description": vRow["Literature Evidence"], "name": vRow["PMID"], "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/"+vRow["PMID"]});
+					}
+				} else {
+					relation.children.push({"category": "disease", "color": "blue", "name": vRow["Phenotype"], "opacity": 0.9, "score": 1.0, "size": 						21249.10008042162, "type": "square", "url": "http://go/pikm", "children": [
+											{"category": "study", "color": "blue", "description": vRow["Literature Evidence"], "name": vRow["PMID"], "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/"+vRow["PMID"]}
+										]});
+				}
+			} else {
+				gene.children.push({"category": "relation", "color": "blue", "name": vRow["Relation"], "opacity": 0.9, "score": 1.0, "size": 					21249.10008042162, "type": "triangle", "url": "http://go/pikm", "children": [
+										{"category": "disease", "color": "blue", "name": vRow["Phenotype"], "opacity": 0.9, "score": 1.0, "size": 21249.10008042162, "type": "square", "url": "http://go/pikm", "children": [
+											{"category": "study", "color": "blue", "description": vRow["Literature Evidence"], "name": vRow["PMID"], "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/"+vRow["PMID"]}
+										]}
+									]});
+			}
+		} else {
+			json.push({"category": "root", "color": "red", "name": vRow["Gene Symbol"], "opacity": 0.9, "score": 1.0, "size": 90000, "type": 		   "circle", "url": "http://go/library", "children": [
+							{"category": "relation", "color": "blue", "name": vRow["Relation"], "opacity": 0.9, "score": 1.0, "size":       21249.10008042162, "type": "triangle", "url": "http://go/pikm", "children": [
+								{"category": "disease", "color": "blue", "name": vRow["Phenotype"], "opacity": 0.9, "score": 1.0, "size": 21249.10008042162, "type": "square", "url": "http://go/pikm", "children": [
+									{"category": "study", "color": "blue", "description": vRow["Literature Evidence"], "name": vRow["PMID"], "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/"+vRow["PMID"]}
+								]}
+							]}
+						]}
+					);
+		}				
+	});
+	return json;
+}
+
+function createNodesList(graphJson) {
+	var list = d3
+				.select('#nodes')
+				.append("div")
+				.style("height", height + "px")				
+				.style("overflow-y", "scroll");
+				
+	
+	var selectAllBoxes = list						
+							.append("input")
+							.attr("type", "checkbox")
+							.on("click", function() {
+								if (this.checked === true) { 		
+									firstTime = true;
+									d3.selectAll('input').property("checked", true);
+									root = [];
+									root = root.concat(graphJson);
+									update();
+									update();
+								} else {
+									firstTime = true;
+									d3.selectAll('input').property("checked", false);
+									root = [];
+									update();
+									update();
+								}
+							});
+							
+	var selectAllBoxesLabel = list
+								.append('label')
+								.text("Select All");
+								
+	var selectAllBoxesDiv = list
+					.append("div")
+					.style("border-bottom", "1px solid grey");
+					
+	var labelEnter = list
+						.selectAll("span")
+						.data(graphJson)
+						.enter()
+						.append("div")
+						;
+	
+	labelEnter
+		.append("input")
+		.attr("type", "checkbox")
+		.attr("class", "relationCheck")
+		.on("click", addNode);
+	
+	labelEnter
+		.append('label')
+		.text(function(d) { return d.name; });
+}
+
+var firstTime = true;
+    
+var width = window.innerWidth,
+    height = window.innerHeight,
+    root;
+
+var myUrl = window.location.href;
+var myHash = window.location.hash
+console.log(myHash);
+if(myHash != "")
+    {var myJSON = myHash.substring(1,myHash.length) + '.json';
+    console.log("Detected:"+myJSON)} 
+else 
+    {myJSON = "paricalcitol.json"
+    console.log("Undetected:"+myJSON)};
+    
+var force = d3.layout.force()
+    .linkDistance(70)
+    .charge(-220)
+    .gravity(.1)
+    .size([width, height])
+    .on("tick", tick);
+	
+var svg = d3.select("#graph").append("svg")
+		.attr("width", width)
+		.attr("height", height);
+		
+		// Define the div for the tooltip
+	var div = d3.select("body").append("div")	
+		.attr("class", "tooltip")				
+		.style("opacity", 0);
+		
+	var link = svg.selectAll(".link"),
+		node = svg.selectAll(".node");
+	
+function createGraph() {
+	root = [];
+	update();
+	update();
+}	
+function addNode(node) {
+	firstTime = true;
+	if (this.checked === true) {
+		var rNodes = graphJson.filter(function(v) {
+			return v.name === node.name;
+		});
+		setupRootElements(rNodes);
+	} else {
+		var matchNode = root.find(function(rcNode){return node.name==rcNode.name});
+		if (matchNode) {
+			root.splice(root.indexOf(matchNode), 1);
+		}
+	}	
+	update();
+	update();
+	
+}    
+
+function setupRootElements(rNodes) {
+	root = root.concat(rNodes);
+}
+
+function update() {
+  var nodes = flatten(root),
+      links = [];//d3.layout.tree().links(nodes);
+
+  function recurse(nodes) {
+    nodes.forEach(function(node, index) {
+		if (node.children) {
+			node.children.forEach(function(childNode) {
+				links.push({"source": index, "target": nodes.findIndex(function(vChildNode) {return vChildNode.name ===  childNode.name})});
+				
+			});	
+		}	
+	});
+  } 
+  recurse(nodes); 	  
+	  
+	  
+  closeAll(nodes);
+      
+  // Restart the force layout.
+  force
+      .nodes(nodes)
+      .links(links)
+      .start();
+    
+   // Update links.
+  link = link.data(links, function(d) { return d.target.name + "_" + d.source.name; });
+
+  link.exit().remove();
+
+  link.enter().insert("line", ".node")
+      .attr("class", "link");
+
+  // Update nodes.
+  node = node.data(nodes, function(d) { return d.name; });
+
+  node.exit().remove();
+
+  var nodeEnter = node.enter().append("g")
+      .attr("class", "node")
+      .on("click", click)
+      .on("mouseover", mouseover)
+      .on("mouseout",mouseout)
+      .call(force.drag);
+
+  nodeEnter.append("circle")
+      .attr("r", function(d) { return Math.sqrt(d.size) / 10 || 4.5; });
+
+  nodeEnter.append("text")
+      .attr("dy", ".35em")
+      .text(function(d) { return d.name; });
+
+  node.select("circle")
+      .style("fill", color);    
+}
+
+function tick() {
+  link.attr("x1", function(d) { return d.source.x; })
+      .attr("y1", function(d) { return d.source.y; })
+      .attr("x2", function(d) { return d.target.x; })
+      .attr("y2", function(d) { return d.target.y; });
+
+  node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+}
+
+function color(d) {
+  return d._children ? (d.category === "disease" ? "yellow" : "lightgreen")// collapsed package
+      : d.children ? "#c6dbef" // expanded package
+      : "#fd8d3c"; // leaf node
+}
+
+// Toggle children on click.
+function click(d) {
+  if (d3.event.defaultPrevented) return; // ignore drag
+  if (d.category=="study"){window.open(d.url,'_blank')};
+  if (d.children) {
+    d._children = d.children;
+    d.children = null;
+  } else {
+    d.children = d._children;
+    d._children = null;
+    ;
+  }
+  update();
+}
+    
+function mouseover(d) {
+    if(d.category=="study"){
+            div.transition()		
+                .duration(200)		
+                .style("opacity", .9);		
+            div	.html("Evidence: "+ d.description + "<p>" + "Pubmed ID: " + d.name)	
+                .style("left", (d3.event.pageX) + "px")		
+                .style("top", (d3.event.pageY - 28) + "px");	
+    console.log('Mouseing over');
+    }
+}
+    
+function mouseout(d){
+     div.transition()		
+                .duration(500)		
+                .style("opacity", 0);
+    console.log('Mousing out');
+}
+
+
+
+function closeAll(nodes) {
+    if(firstTime){
+        nodes.forEach(function(d){
+			if(d.category=="relation" && d.children){
+				d._children = d.children;
+				d.children = null
+			};
+			if(d.category=="disease" && d.children){
+				d._children = d.children;
+				d.children = null;
+				firstTime = false
+			}
+		});
+    }
+}
+    
+// Returns a list of all nodes under the root.
+var i = 0;
+function flatten(root) {
+  var nodes = [];
+
+  function recurse(node) {	
+	if (Array.isArray(node)) node.forEach(recurse);
+	if (node.children) node.children.forEach(recurse);
+	if (!Array.isArray(node)) {
+		var matchedNode = nodes.find(function(vNode){return vNode.name===node.name});
+		if (matchedNode) {
+			//node.id = matchedNode.id;
+		} else {
+			//if (!node.id) node.id = ++nodeCounter;
+			nodes.push(node);
+		}	
+	}   
+  }
+
+  recurse(root);
+  return nodes;
+}
+
+</script>
+

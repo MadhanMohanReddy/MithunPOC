@@ -1,0 +1,809 @@
+{"category": "root", "color": "red", "name": "Paricalcitol", "opacity": 0.9, "score": 1.0, "size": 90000, "type": "circle", "url": "http://go/library",
+"children": [
+	{"category": "relation", "color": "blue", "name": "treat", "opacity": 0.9, "score": 1.0, "size": 21249.10008042162, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Hyperparathyroidism, Secondary", "opacity": 0.9, "score": 1.0, "size": 21249.10008042162, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Meta analysis the efficacy and safety of paricalcitol for the treatment of secondary hyperparathyroidism and proteinuria in chronic kidney disease ", "name": "23509710", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23509710"},
+			{"category": "study", "color": "blue", "description": "Previous studies have demonstrated the safety and efficacy of using Paricalcitol for the treatment of secondary hyperparathyroidism SHPT in patients on dialysis ", "name": "23509710", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23509710"},
+			{"category": "study", "color": "blue", "description": "Efficacy and initial dose determination of paricalcitol for treatment of secondary hyperparathyroidism in Chinese subjects ", "name": "24131674", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/24131674"},
+			{"category": "study", "color": "blue", "description": "A Budget Impact Analysis Bia Of The Use Of Paricalcitol For The Treatment Of Secondary Hyperparathyroidism Shpt In End Stage Renal Disease Patients ", "name": "27201327", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/27201327"},
+			{"category": "study", "color": "blue", "description": "Invention consisted of the introduction of paricalcitol for the treatment of secondary hyperparathyroidism ", "name": "23364628", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23364628"},
+			{"category": "study", "color": "blue", "description": "The objective of this study was to compare parathyroidectomy rates in secondary hyperparathyroidism patients treated with paricalcitol or cinacalcet ", "name": "20699620", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/20699620"},
+			{"category": "study", "color": "blue", "description": "Oral paricalcitol for the treatment of secondary hyperparathyroidism in patients on hemodialysis or peritoneal dialysis ", "name": "17914251", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/17914251"},
+			{"category": "study", "color": "blue", "description": "Intravenous paricalcitol for treatment of secondary hyperparathyroidism in children on hemodialysis ", "name": "17533024", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/17533024"},
+			{"category": "study", "color": "blue", "description": "Long term outcomes of cinacalcet and paricalcitol titration protocol for treatment of secondary hyperparathyroidism ", "name": "17429197", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/17429197"},
+			{"category": "study", "color": "blue", "description": "Health economic comparison of paricalcitol calcitriol and alfacalcidol for the treatment of secondary hyperparathyroidism during haemodialysis ", "name": "18020546", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/18020546"},
+			{"category": "study", "color": "blue", "description": "Paricalcitol capsule for the treatment of secondary hyperparathyroidism in stages 3 and 4 CKD ", "name": "16431255", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/16431255"},
+			{"category": "study", "color": "blue", "description": "A comparison of dosing regimens of paricalcitol capsule for the treatment of secondary hyperparathyroidism in CKD stages 3 and 4 ", "name": "16543714", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/16543714"},
+			{"category": "study", "color": "blue", "description": "Paricalcitol for treatment of secondary hyperparathyroidism in CKD patients ", "name": "16731305", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/16731305"},
+			{"category": "study", "color": "blue", "description": "Health economic comparison of paricalcitol calcitriol and alfacalcidol for the treatment of secondary hyperparathyroidism during haemodialysis ", "name": "17163297", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/17163297"},
+			{"category": "study", "color": "blue", "description": "black triangle An oral formulation of paricalcitol has been developed for the prevention and treatment of secondary hyperparathyroidism in patients with stage 3 or 4 chronic kidney disease black triangle Paricalcitol is a synthetic vitamin D analog that binds to the vitamin D receptor inducing suppression of parathyroid hormone PTH secretion black triangle Oral paricalcitol was significantly more effective than placebo in treating secondary hyperparathyroidism in patients with stage 3 or 4 chronic kidney disease ", "name": "17002490", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/17002490"},
+			{"category": "study", "color": "blue", "description": "Oral paricalcitol for the treatment of secondary hyperparathyroidism in chronic kidney disease ", "name": "18360604", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/18360604"},
+			{"category": "study", "color": "blue", "description": "Paricalcitol was evaluated for the treatment of secondary hyperparathyroidism SHPT in a long term prospective open label study of 37 patients with end stage renal failure resistant to intravenous calcitriol ", "name": "11689387", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/11689387"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Hyperparathyroidism", "opacity": 0.9, "score": 1.0, "size": 10397.207708399179, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "The results of the study indicate that paricalcitol is effective in treating hyperparathyroidism in patients on PD and suggest an effect upon proteinuria and PM permeability not previously reported with diminished peritoneal protein loss and increased ultrafiltration ", "name": "22735366", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/22735366"},
+			{"category": "study", "color": "blue", "description": "In conclusion paricalcitol is effective for treating hyperparathyroidism in patients on peritoneal dialysis and seems also to have an antiproteinuric effect in these patients ", "name": "22073844", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/22073844"},
+			{"category": "study", "color": "blue", "description": "Doxercalciferol and paricalcitol are used to treat hyperparathyroidism in chronic kidney disease ", "name": "18826857", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/18826857"},
+			{"category": "study", "color": "blue", "description": "Paricalcitol versus calcitriol treatment for hyperparathyroidism in pediatric hemodialysis patients ", "name": "16900383", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/16900383"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Renal Insufficiency, Chronic", "opacity": 0.9, "score": 1.0, "size": 5198.6038541995895, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Doxercalciferol and paricalcitol are used to treat hyperparathyroidism in chronic kidney disease ", "name": "18826857", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/18826857"},
+			{"category": "study", "color": "blue", "description": "Oral paricalcitol for the treatment of secondary hyperparathyroidism in chronic kidney disease ", "name": "18360604", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/18360604"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Diabetes Mellitus", "opacity": 0.9, "score": 1.0, "size": 5198.6038541995895, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "In the early stage of diabetic nephropathy paricalcitol treatment counterbalances the effect of diabetes on circulating ACE2 activity ", "name": "26697977", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/26697977"},
+			{"category": "study", "color": "blue", "description": "Our results suggest that additional use of paricalcitol may be beneficial in treating patients with diabetes under standard therapeutic strategies ", "name": "26697977", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/26697977"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Diabetes Mellitus, Type 1", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "We recently showed that losartan and paricalcitol are synergistic in the treatment of diabetic nephropathy in a model of type 1 diabetes ", "name": "20182412", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/20182412"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Diabetic Nephropathies", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "We recently showed that losartan and paricalcitol are synergistic in the treatment of diabetic nephropathy in a model of type 1 diabetes ", "name": "20182412", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/20182412"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Hyperphosphatemia", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "The 5 6 nephrectomized NX Sprague Dawley rats on a normal or hyperphosphatemia inducing diet were treated with vehicle paricalcitol or doxercalciferol for two weeks ", "name": "20204178", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/20204178"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Proteinuria", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Meta analysis the efficacy and safety of paricalcitol for the treatment of secondary hyperparathyroidism and proteinuria in chronic kidney disease ", "name": "23509710", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23509710"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Renal Insufficiency", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Animals with renal failure treated with hypercalcemic doses of calcitriol and paricalcitol showed an increase in systolic blood pressure ", "name": "17352647", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/17352647"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Uremia", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "The 5 6 nephrectomized NX male Sprague Dawley rats with established uremia were treated with vehicle or paricalcitol 0 16 g kg i p 3 week ", "name": "23261531", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23261531"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "therapy", "opacity": 0.9, "score": 1.0, "size": 8239.592165010823, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Hyperparathyroidism, Secondary", "opacity": 0.9, "score": 1.0, "size": 8239.592165010823, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Paricalcitol is an effective therapy for secondary hyperparathyroidism in kidney transplant recipients ", "name": "26306956", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/26306956"},
+			{"category": "study", "color": "blue", "description": "Eight patients with an estimated glomerular filtration rate between 15 and 44 mL min 1 73 m 2 and an intact parathyroid hormone PTH level higher than 110 pg mL received oral paricalcitol 1 g 48 hours as therapy for secondary hyperparathyroidism ", "name": "24511210", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/24511210"},
+			{"category": "study", "color": "blue", "description": "Paricalcitol and cinacalcet are common therapies for patients on haemodialysis with secondary hyperparathyroidism SHPT ", "name": "21931122", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/21931122"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Necrosis", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "In the histopathological evaluation paricalcitol therapy improved tubular necrosis and medullar congestion but there was no significant difference in terms of tubular cell swelling cellular vacuolisation or general damage ", "name": "24112495", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/24112495"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Wounds and Injuries", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Paricalcitol therapy improved renal I R injury in terms of serum and histopathological parameters ", "name": "24112495", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/24112495"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "suppress", "opacity": 0.9, "score": 1.0, "size": 5198.6038541995895, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Hyperparathyroidism, Secondary", "opacity": 0.9, "score": 1.0, "size": 5198.6038541995895, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Thus alfacalcidol and paricalcitol were equally effective in the suppression of secondary hyperparathyroidism in hemodialysis patients while calcium and phosphorus were kept in the desired range ", "name": "21832979", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/21832979"},
+			{"category": "study", "color": "blue", "description": "Paricalcitol is a less hypercalcemic vitamin D analog that has been shown to suppress secondary hyperparathyroidism and to prevent the associated histomorphometric changes in bone ", "name": "16734389", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/16734389"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "role", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Proteinuria", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "The role of paricalcitol on proteinuria ", "name": "21561543", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/21561543"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "restore", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Necrosis", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "The cotreatment of a selective COX 2 inhibitor with paricalcitol restored functional injury and tubular necrosis in paricalcitol treated mice with IRI ", "name": "23229926", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23229926"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Wounds and Injuries", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "The cotreatment of a selective COX 2 inhibitor with paricalcitol restored functional injury and tubular necrosis in paricalcitol treated mice with IRI ", "name": "23229926", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23229926"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "regulate", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Vascular Calcification", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Paricalcitol and alfacalcidol modulate regulators of vascular calcification ", "name": "25112372", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/25112372"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "reduce", "opacity": 0.9, "score": 1.0, "size": 16479.184330021646, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Albuminuria", "opacity": 0.9, "score": 1.0, "size": 16479.184330021646, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Selective vitamin D receptor activation with paricalcitol for reduction of albuminuria in patients with type 2 diabetes VITAL study a randomised controlled trial ", "name": "21055801", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/21055801"},
+			{"category": "study", "color": "blue", "description": "We aimed to assess whether paricalcitol could be used to reduce albuminuria in patients with diabetic nephropathy ", "name": "21055801", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/21055801"},
+			{"category": "study", "color": "blue", "description": "The vitamin D receptor activator paricalcitol has been shown to reduce albuminuria ", "name": "22958603", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/22958603"},
+			{"category": "study", "color": "blue", "description": "Paricalcitol for reduction of albuminuria in diabetes ", "name": "21334524", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/21334524"},
+			{"category": "study", "color": "blue", "description": "Paricalcitol for reduction of albuminuria in diabetes ", "name": "21334525", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/21334525"},
+			{"category": "study", "color": "blue", "description": "Paricalcitol for reduction of albuminuria in diabetes ", "name": "21334526", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/21334526"},
+			{"category": "study", "color": "blue", "description": "Paricalcitol for reduction of albuminuria in diabetes ", "name": "21334527", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/21334527"},
+			{"category": "study", "color": "blue", "description": "The VITAL study tests the hypothesis whether paricalcitol persistently reduces albuminuria in diabetic subjects already receiving angiotensin converting enzyme inhibitor ACEI and or angiotensin receptor blocker ARB therapy ", "name": "19521070", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/19521070"},
+			{"category": "study", "color": "blue", "description": "Paricalcitol reduces albuminuria and inflammation in chronic kidney disease a randomized double blind pilot trial ", "name": "18606901", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/18606901"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Proteinuria", "opacity": 0.9, "score": 1.0, "size": 13438.196019210412, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Emerging evidence show that paricalcitol PCT reduces proteinuria in the presence of intensified inhibition of RAS however there is no evidence in FD ", "name": "25143556", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/25143556"},
+			{"category": "study", "color": "blue", "description": "Paricalcitol reduces proteinuria but does not modify peritoneal protein loss in patients on peritoneal dialysis ", "name": "23364628", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23364628"},
+			{"category": "study", "color": "blue", "description": "Paricalcitol reduces proteinuria in non dialysis chronic kidney disease patients ", "name": "23931873", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23931873"},
+			{"category": "study", "color": "blue", "description": "Whether paricalcitol PCT reduces proteinuria in the presence of intensified inhibition of Renin Angiotensin System RAS is poorly studied ", "name": "23167771", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23167771"},
+			{"category": "study", "color": "blue", "description": "As a pleiotropic effect paricalcitol reduces proteinuria in patients with chronic kidney disease stages 2 4 ", "name": "22073844", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/22073844"},
+			{"category": "study", "color": "blue", "description": "Does paricalcitol reduce proteinuria in patients with chronic kidney disease ", "name": "16932459", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/16932459"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Diabetes Mellitus", "opacity": 0.9, "score": 1.0, "size": 12070.784343255753, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Paricalcitol for reduction of albuminuria in diabetes ", "name": "21334524", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/21334524"},
+			{"category": "study", "color": "blue", "description": "Paricalcitol for reduction of albuminuria in diabetes ", "name": "21334525", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/21334525"},
+			{"category": "study", "color": "blue", "description": "Paricalcitol for reduction of albuminuria in diabetes ", "name": "21334526", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/21334526"},
+			{"category": "study", "color": "blue", "description": "Paricalcitol for reduction of albuminuria in diabetes ", "name": "21334527", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/21334527"},
+			{"category": "study", "color": "blue", "description": "The VITAL study tests the hypothesis whether paricalcitol persistently reduces albuminuria in diabetic subjects already receiving angiotensin converting enzyme inhibitor ACEI and or angiotensin receptor blocker ARB therapy ", "name": "19521070", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/19521070"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Renal Insufficiency, Chronic", "opacity": 0.9, "score": 1.0, "size": 8239.592165010823, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Paricalcitol reduces proteinuria in non dialysis chronic kidney disease patients ", "name": "23931873", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23931873"},
+			{"category": "study", "color": "blue", "description": "As a pleiotropic effect paricalcitol reduces proteinuria in patients with chronic kidney disease stages 2 4 ", "name": "22073844", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/22073844"},
+			{"category": "study", "color": "blue", "description": "Does paricalcitol reduce proteinuria in patients with chronic kidney disease ", "name": "16932459", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/16932459"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Inflammation", "opacity": 0.9, "score": 1.0, "size": 8239.592165010823, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Paricalcitol reduces oxidative stress and inflammation in hemodialysis patients ", "name": "23186077", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23186077"},
+			{"category": "study", "color": "blue", "description": "In renal patients undergoing hemodialysis paricalcitol treatment significantly reduces oxidative stress and inflammation two well known factors leading to cardiovascular damage ", "name": "23186077", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23186077"},
+			{"category": "study", "color": "blue", "description": "Paricalcitol reduces albuminuria and inflammation in chronic kidney disease a randomized double blind pilot trial ", "name": "18606901", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/18606901"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Diabetic Nephropathies", "opacity": 0.9, "score": 1.0, "size": 5198.6038541995895, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Our data seem to suggest a potential role of aliskiren plus paricalcitol acting synergystically for reducing the progression of diabetic nephropathy in an experimental rat model ", "name": "25532067", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/25532067"},
+			{"category": "study", "color": "blue", "description": "We aimed to assess whether paricalcitol could be used to reduce albuminuria in patients with diabetic nephropathy ", "name": "21055801", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/21055801"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Fibrosis", "opacity": 0.9, "score": 1.0, "size": 5198.6038541995895, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Treatment with the selective VDR activator paricalcitol reduces myocardial fibrosis and preserves diastolic LV function due to pressure overload in a mouse model ", "name": "22800987", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/22800987"},
+			{"category": "study", "color": "blue", "description": "Combination therapy with paricalcitol and trandolapril reduces renal fibrosis in obstructive nephropathy ", "name": "19759524", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/19759524"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Leiomyoma", "opacity": 0.9, "score": 1.0, "size": 5198.6038541995895, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "We found that paricalcitol has potential to reduce the proliferation of the immortalized human uterine fibroid cells ", "name": "24925855", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/24925855"},
+			{"category": "study", "color": "blue", "description": "We found that while both paricalcitol and 1 25 dihydroxyvitamin D3 significantly reduced fibroid tumor size the shrinkage was slightly higher in the paricalcitol treated group ", "name": "24925855", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/24925855"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Diabetes Mellitus, Type 2", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Selective vitamin D receptor activation with paricalcitol for reduction of albuminuria in patients with type 2 diabetes VITAL study a randomised controlled trial ", "name": "21055801", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/21055801"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Hyperparathyroidism", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Oral paricalcitol reduces the prevalence of posttransplant hyperparathyroidism results of an open label randomized trial ", "name": "23601186", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23601186"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Hyperparathyroidism, Secondary", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Paricalcitol and doxercalciferol are effective in reducing parathyroid hormone PTH concentrations in patients with secondary hyperparathyroidism ", "name": "16282676", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/16282676"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Neoplasms", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Compared with their individual therapy combination of 5 FU and paricalcitol showed more significant reducing effect on numbers of grown tumors and large aberrant crypts foci ", "name": "27020656", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/27020656"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Peritoneal Fibrosis", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Paricalcitol reduces peritoneal fibrosis in mice through the activation of regulatory T cells and reduction in IL 17 production ", "name": "25279459", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/25279459"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "provide", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Heart Failure", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Paricalcitol should provide additional clinical benefits over the standard treatment for chronic kidney and heart failure especially in cases of cardiorenal syndrome ", "name": "23430986", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23430986"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Renal Insufficiency, Chronic", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Vitamin D analogs such as paricalcitol and calcitriol have been shown to provide survival benefit for Stage 5 chronic kidney disease CKD patients possibly due to their positive impact on the cardiovascular system ", "name": "16371233", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/16371233"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "protect", "opacity": 0.9, "score": 1.0, "size": 8239.592165010823, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Wounds and Injuries", "opacity": 0.9, "score": 1.0, "size": 8239.592165010823, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Protective effect of paricalcitol on cyclosporine induced renal injury in rats ", "name": "22483459", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/22483459"},
+			{"category": "study", "color": "blue", "description": "We evaluated the protective effect of paricalcitol on cyclosporine CsA induced renal injury using an experimental model of chronic CsA nephropathy ", "name": "22483459", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/22483459"},
+			{"category": "study", "color": "blue", "description": "Paricalcitol protects GM induced renal injury by antiapoptotic mechanisms including inhibition of intrinsic apoptosis pathway and JNK ", "name": "24227945", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/24227945"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Inflammation", "opacity": 0.9, "score": 1.0, "size": 5198.6038541995895, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "The findings of our study suggest that paricalcitol exerts a protective effect against LPS induced myocardial inflammation by regulating the expression of cell adhesion molecules and TNF and by improving myocardial permeability ", "name": "26954764", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/26954764"},
+			{"category": "study", "color": "blue", "description": "To investigate the protective effect of paricalcitol and enalapril on renal inflammation and oxidative stress in ApoE knock out mice ", "name": "26322179", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/26322179"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Anoxia", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Paricalcitol protects against TGF 1 induced fibrotic responses in hypoxia and stabilises HIF in renal epithelia ", "name": "25107382", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/25107382"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Diabetic Nephropathies", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Because paricalcitol has been reported to protect against diabetic nephropathy we investigated the role of paricalcitol in modulating ACE2 in these mice ", "name": "26697977", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/26697977"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Proteinuria", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Paricalcitol seems to have a protective effect on proteinuria levels ", "name": "23320973", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23320973"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Uremia", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Enalapril paricalcitol and their combined therapy afford protection against cardiac oxidative stress in uremia ", "name": "19033720", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/19033720"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Vascular Calcification", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "We conclude that low clinically relevant dosages of calcitriol and paricalcitol may protect against CKD stimulated vascular calcification ", "name": "18448587", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/18448587"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "promote", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Bone Resorption", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Increased parathyroid activity associated with chronic kidney disease is often managed with calcitriol which can elevate serum calcium Ca by increasing bone resorption and intestinal absorption whereas paricalcitol promotes less bone resorption ", "name": "20016142", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/20016142"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "proliferate", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Colonic Neoplasms", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Paricalcitol also inhibited the proliferation of colon cancer cell lines HT 29 ED 50 1 7 x 10 8 M and SW837 ED 50 3 2 x 10 8 M ", "name": "12813173", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/12813173"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Leiomyoma", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "We found that paricalcitol has potential to reduce the proliferation of the immortalized human uterine fibroid cells ", "name": "24925855", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/24925855"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Leukemia, Myeloid", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Paricalcitol inhibited the proliferation of myeloid leukemia cell lines HL 60 NB 4 and THP 1 cells at an effective dose that inhibited growth 50 ED 50 of 2 4 5 8 x 10 9 M by inducing cell cycle arrest and differentiation ", "name": "12813173", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/12813173"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Multiple Myeloma", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Paricalcitol inhibited the proliferation of NCI H929 myeloma cells at an ED 50 of 2 0 x 10 10 M by inducing cell cycle arrest and apoptosis ", "name": "12813173", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/12813173"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Pancreatic Neoplasms", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "We therefore investigated the anti proliferative effects of paricalcitol on the growth of pancreatic tumor cell lines in vitro and in vivo ", "name": "18094617", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/18094617"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "produce", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Vascular Calcification", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Experimental work shows that for similar serum concentrations of calcium and phosphate paricalcitol produces less vascular calcification than calcitriol suggesting a differential effect at the cellular level ", "name": "21691129", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/21691129"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "prevent", "opacity": 0.9, "score": 1.0, "size": 10397.207708399179, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Wounds and Injuries", "opacity": 0.9, "score": 1.0, "size": 10397.207708399179, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Paricalcitol prevents cisplatin induced renal injury by suppressing apoptosis and proliferation ", "name": "22449373", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/22449373"},
+			{"category": "study", "color": "blue", "description": "The present study was performed to examine whether paricalcitol may prevent the cisplatin induced kidney injury ", "name": "22449373", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/22449373"},
+			{"category": "study", "color": "blue", "description": "In summary these findings suggest that paricalcitol prevents podocyte dysfunction proteinuria and kidney injury in adriamycin nephropathy by inhibiting Wnt catenin signaling ", "name": "21030600", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/21030600"},
+			{"category": "study", "color": "blue", "description": "In conclusion paricalcitol prevents GM induced renal injury by inhibiting renal inflammation and fibrosis the mechanism of which is the interruption of NF kappaB ERK signaling pathway and preservation of tubular epithelial integrity via inhibiting EMT process ", "name": "19940033", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/19940033"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Renal Insufficiency", "opacity": 0.9, "score": 1.0, "size": 8239.592165010823, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Moreover paricalcitol prevents vascular calcification in experimental models of renal failure compared with calcitriol ", "name": "21603158", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/21603158"},
+			{"category": "study", "color": "blue", "description": "It was demonstrated that paricalcitol prevents vascular calcification in experimental models of renal failure compared with calcitriol ", "name": "18393917", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/18393917"},
+			{"category": "study", "color": "blue", "description": "Paricalcitol administration prevented renal insufficiency associated decreases in BMD in the femoral neck and the femoral midshaft and restored bone strength in the femoral neck ", "name": "16734389", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/16734389"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Vascular Calcification", "opacity": 0.9, "score": 1.0, "size": 5198.6038541995895, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Moreover paricalcitol prevents vascular calcification in experimental models of renal failure compared with calcitriol ", "name": "21603158", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/21603158"},
+			{"category": "study", "color": "blue", "description": "It was demonstrated that paricalcitol prevents vascular calcification in experimental models of renal failure compared with calcitriol ", "name": "18393917", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/18393917"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Fibrosis", "opacity": 0.9, "score": 1.0, "size": 5198.6038541995895, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "The vitamin D receptor activator paricalcitol prevents fibrosis and diastolic dysfunction in a murine model of pressure overload ", "name": "22800987", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/22800987"},
+			{"category": "study", "color": "blue", "description": "We hypothesized that activation of the VDR by paricalcitol would prevent fibrosis and LV diastolic dysfunction in an established murine model of cardiac remodeling ", "name": "22800987", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/22800987"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Inflammation", "opacity": 0.9, "score": 1.0, "size": 5198.6038541995895, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "We examined whether paricalcitol is effective in preventing inflammation in a mouse model of IRI and evaluated the cyclooxygenase 2 COX 2 and prostaglandin E2 PGE2 pathways as a protective mechanism of paricalcitol ", "name": "23229926", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23229926"},
+			{"category": "study", "color": "blue", "description": "Our study demonstrates that paricalcitol pretreatment prevents renal IRI via the inhibition of renal inflammation and the up regulation of COX 2 and PGE2 is one of the protective mechanisms of paricalcitol in renal IRI ", "name": "23229926", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23229926"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Albuminuria", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Treatment of the diabetic mice with losartan or paricalcitol 19 nor 1 25 dihydroxyvitamin D 2 an activated vitamin D analog alone moderately ameliorated kidney injury however combined treatment with losartan and paricalcitol completely prevented albuminuria restored glomerular filtration barrier structure and markedly reduced glomerulosclerosis ", "name": "18838678", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/18838678"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Cervical Intraepithelial Neoplasia", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "We hypothesised that paricalcitol may prevent CIN ", "name": "22815410", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/22815410"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Proteinuria", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "In summary these findings suggest that paricalcitol prevents podocyte dysfunction proteinuria and kidney injury in adriamycin nephropathy by inhibiting Wnt catenin signaling ", "name": "21030600", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/21030600"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "potential", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Leiomyoma", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "We found that paricalcitol has potential to reduce the proliferation of the immortalized human uterine fibroid cells ", "name": "24925855", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/24925855"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Leukemia", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "In order to explore paricalcitol as a potential agent against leukemia we tested its effects on HL 60 and U937 leukemia cell lines ", "name": "12618899", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/12618899"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "modulate", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Vascular Calcification", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Paricalcitol and alfacalcidol modulate regulators of vascular calcification ", "name": "25112372", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/25112372"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "modify", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Albuminuria", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "At the doses used neither calcitriol nor paricalcitol significantly modified renal function or reduced albuminuria in experimental diabetes ", "name": "22169009", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/22169009"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "manage", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Hyperparathyroidism", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Vitamin D receptor VDR modulators VDRMs such as calcitriol paricalcitol and doxercalciferol are commonly used to manage hyperparathyroidism secondary to chronic kidney disease CKD ", "name": "21557735", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/21557735"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Proteinuria", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "A secondary aim was to determine if sufficient data was available to assess the effect of Paricalcitol for the management of proteinuria ", "name": "23509710", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23509710"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Renal Insufficiency, Chronic", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "The aim of the current meta analysis was to assess the safety and efficacy of Paricalcitol for the management of SHPT in patients with chronic kidney disease CKD not yet on dialysis ", "name": "23509710", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23509710"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "lower", "opacity": 0.9, "score": 1.0, "size": 5198.6038541995895, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Albuminuria", "opacity": 0.9, "score": 1.0, "size": 5198.6038541995895, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Data on paricalcitol lowering albuminuria and proteinuria already exist however it is unclear how paricalcitol withdrawal affects both ", "name": "26465921", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/26465921"},
+			{"category": "study", "color": "blue", "description": "Diabetic nephropathy Paricalcitol lowers residual albuminuria in type 2 diabetes ", "name": "21355120", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/21355120"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Diabetes Mellitus, Type 2", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Diabetic nephropathy Paricalcitol lowers residual albuminuria in type 2 diabetes ", "name": "21355120", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/21355120"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Neoplasms", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Intraperitoneal tumor volume was significantly lower in paricalcitol treated mice control group 353 2 22 9 mm 3 vs paricalcitol group 252 0 8 4 mm 3 ", "name": "22969249", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/22969249"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "lead", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Lymphomatoid Granulomatosis", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "The health benefits of paricalcitol lead to an increase in LYG of 0 52 and a gain in QALYs of 0 465 ", "name": "20586517", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/20586517"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "inhibit", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Colonic Neoplasms", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Paricalcitol also inhibited the proliferation of colon cancer cell lines HT 29 ED 50 1 7 x 10 8 M and SW837 ED 50 3 2 x 10 8 M ", "name": "12813173", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/12813173"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Disease", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Pharmacologic blockade of Wnt catenin signaling by paricalcitol inhibited MMP 7 expression in diseased kidneys and reduced the levels detected in the urine ", "name": "22095947", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/22095947"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Inflammation", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Paricalcitol inhibits renal inflammation by promoting vitamin D receptor mediated sequestration of NF kappaB signaling ", "name": "18525004", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/18525004"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Leukemia, Myeloid", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Paricalcitol inhibited the proliferation of myeloid leukemia cell lines HL 60 NB 4 and THP 1 cells at an effective dose that inhibited growth 50 ED 50 of 2 4 5 8 x 10 9 M by inducing cell cycle arrest and differentiation ", "name": "12813173", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/12813173"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Multiple Myeloma", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Paricalcitol inhibited the proliferation of NCI H929 myeloma cells at an ED 50 of 2 0 x 10 10 M by inducing cell cycle arrest and apoptosis ", "name": "12813173", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/12813173"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Stomach Neoplasms", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "In this study treatment with paricalcitol inhibited gastric cancer cell growth and induced cell cycle arrest ", "name": "22969249", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/22969249"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "induce", "opacity": 0.9, "score": 1.0, "size": 13438.196019210412, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Wounds and Injuries", "opacity": 0.9, "score": 1.0, "size": 13438.196019210412, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Paricalcitol prevents cisplatin induced renal injury by suppressing apoptosis and proliferation ", "name": "22449373", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/22449373"},
+			{"category": "study", "color": "blue", "description": "These results suggest that paricalcitol may ameliorate cisplatin induced renal injury by suppressing the fibrotic apoptotic and proliferative factors ", "name": "22449373", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/22449373"},
+			{"category": "study", "color": "blue", "description": "These results show that paricalcitol attenuated HHE induced renal tubular cell injury by suppressing inflammation and EMT process through inhibition of the NF B TGF Smad and catenin signaling pathways ", "name": "23690997", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23690997"},
+			{"category": "study", "color": "blue", "description": "Paricalcitol protects GM induced renal injury by antiapoptotic mechanisms including inhibition of intrinsic apoptosis pathway and JNK ", "name": "24227945", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/24227945"},
+			{"category": "study", "color": "blue", "description": "In conclusion paricalcitol prevents GM induced renal injury by inhibiting renal inflammation and fibrosis the mechanism of which is the interruption of NF kappaB ERK signaling pathway and preservation of tubular epithelial integrity via inhibiting EMT process ", "name": "19940033", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/19940033"},
+			{"category": "study", "color": "blue", "description": "Paricalcitol attenuates cyclosporine induced kidney injury in rats ", "name": "20237458", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/20237458"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Colitis", "opacity": 0.9, "score": 1.0, "size": 5198.6038541995895, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Based on the established inhibitory effects of the vitamin D VDR pathway on IEC apoptosis we treated mice with 2 4 6 trinitrobenzene sulfonic acid TNBS induced colitis with paricalcitol a vitamin D analog in order to investigate the mechanisms responsible for the inhibitory effects of the vitamin D VDR pathway ", "name": "25813397", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/25813397"},
+			{"category": "study", "color": "blue", "description": "Colonic mucosal barrier permeability and MLCK activation were also investigated using trinitrobenzene sulfonic acid induced colitis models in vitamin D analog paricalcitol treated wild type mice and mice carrying VDR deletion in colonic epithelial cells ", "name": "26287999", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/26287999"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Fibrosis", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Paricalcitol injections may ameliorate isoproterenol induced cardiac fibrosis possibly through regulating cell transition ", "name": "27065465", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/27065465"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Inflammation", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Paricalcitol attenuates 4 hydroxy 2 hexenal induced inflammation and epithelial mesenchymal transition in human renal proximal tubular epithelial cells ", "name": "23690997", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23690997"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Leukemia, Myeloid, Acute", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Paricalcitol induced monocytic differentiation of U937 AML cells which was partially blocked by inducing expression of APL related PML retinoic acid receptor alpha RARalpha chimeric protein in the U937 cells containing a Zn2 inducible expression vector coding for this fusion protein PR9 cells ", "name": "15781666", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/15781666"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "increase", "opacity": 0.9, "score": 1.0, "size": 5198.6038541995895, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Hypercalcemia", "opacity": 0.9, "score": 1.0, "size": 5198.6038541995895, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Increased probability of hypercalcemia after paricalcitol therapy was found RR 7 85 95 CI 2 92 21 10 ", "name": "25963841", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/25963841"},
+			{"category": "study", "color": "blue", "description": "Increased probability of hypercalcemia after paricalcitol therapy was found ", "name": "25963841", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/25963841"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "improve", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Acute Kidney Injury", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Furthermore it is the first study to demonstrate that paricalcitol improves oxidative DNA damage in an experimental acute kidney injury model ", "name": "26983906", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/26983906"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Hyperparathyroidism, Secondary", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Three hour daily hemodialysis with the use of high dose paricalcitol is associated with improved control of severe secondary hyperparathyroidism ", "name": "20337743", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/20337743"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Proteinuria", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "In conclusion like enalapril paricalcitol alone can improve proteinuria glomerulosclerosis and interstitial infiltration and reduce renal oxidative stress ", "name": "21957179", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/21957179"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "important", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Neoplasms", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Compared with their individual therapy combination of 5 FU and paricalcitol showed more significant reducing effect on numbers of grown tumors and large aberrant crypts foci ", "name": "27020656", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/27020656"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "frequent", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Hypercalcemia", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Episodes of hypercalcemia were more frequent in the paricalcitol group compared with the placebo group ", "name": "22337679", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/22337679"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Hyperparathyroidism, Secondary", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Our data suggest that severe secondary hyperparathyroidism is frequent despite aggressive paricalcitol therapy in our inner city HD population ", "name": "14763069", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/14763069"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "fail", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Heart Failure", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Preventing progression of cardiac hypertrophy and development of heart failure by paricalcitol therapy in rats ", "name": "21565836", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/21565836"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "efficient", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Renal Insufficiency", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Therefore paricalcitol can efficiently ameliorate renal insufficiency induced loss of bone mineral and mechanical competence of bone ", "name": "16734389", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/16734389"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "efficacious", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Colorectal Neoplasms", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Paricalcitol Enhances the Chemopreventive Efficacy of 5 Fluorouracil on an Intermediate Term Model of Azoxymethane Induced Colorectal Tumors in Rats ", "name": "27020656", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/27020656"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "effect", "opacity": 0.9, "score": 1.0, "size": 18636.799873410004, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Hyperparathyroidism, Secondary", "opacity": 0.9, "score": 1.0, "size": 18636.799873410004, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Effect of paricalcitol on mineral bone metabolism in kidney transplant recipients with secondary hyperparathyroidism ", "name": "26306956", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/26306956"},
+			{"category": "study", "color": "blue", "description": "Paricalcitol has proved effective to control secondary hyperparathyroidism in chronic kidney disease in both dialysed and non dialysed patients with a low hypercalcaemia incidence ", "name": "26306956", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/26306956"},
+			{"category": "study", "color": "blue", "description": "Our main aim was to show the effect of paricalcitol on mineral bone metabolism in kidney transplant recipients with secondary hyperparathyroidism ", "name": "26306956", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/26306956"},
+			{"category": "study", "color": "blue", "description": "Paricalcitol is an effective therapy for secondary hyperparathyroidism in kidney transplant recipients ", "name": "26306956", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/26306956"},
+			{"category": "study", "color": "blue", "description": "Comparison of the Pharmacological Effects of Paricalcitol Versus Calcitriol on Secondary Hyperparathyroidism in the Dialysis Population ", "name": "27312912", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/27312912"},
+			{"category": "study", "color": "blue", "description": "Effects of oral paricalcitol on secondary hyperparathyroidism and proteinuria of kidney transplant patients ", "name": "23545517", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23545517"},
+			{"category": "study", "color": "blue", "description": "We examined the effect of oral paricalcitol on posttransplant secondary hyperparathyroidism by conducting an open label randomized trial in which 100 incident kidney transplant recipients were randomized 1 1 to receive oral paricalcitol 2 g per day for the first year posttransplant or no additional therapy ", "name": "23601186", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23601186"},
+			{"category": "study", "color": "blue", "description": "Therefore the aim of our study was to evaluate the effect of paricalcitol on proteinuria in non dialysis CKD patients with secondary hyperparathyroidism treated according to Kidney Disease Improving Global Outcomes KDIGO guidelines ", "name": "23931873", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23931873"},
+			{"category": "study", "color": "blue", "description": "Comparative effectiveness of paricalcitol versus cinacalcet for secondary hyperparathyroidism in patients receiving hemodialysis ", "name": "20699620", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/20699620"},
+			{"category": "study", "color": "blue", "description": "Cost Effectiveness of Paricalcitol versus a non selective vitamin D receptor activator for secondary hyperparathyroidism in the UK a chronic kidney disease markov model ", "name": "20586517", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/20586517"},
+			{"category": "study", "color": "blue", "description": "The objective of this study was to determine the cost effectiveness of paricalcitol versus calcitriol for the treatment of secondary hyperparathyroidism in patients with chronic kidney disease in the United States setting ", "name": "19335321", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/19335321"},
+			{"category": "study", "color": "blue", "description": "Once weekly dosing of paricalcitol is an effective option in treatment of secondary hyperparathyroidism ", "name": "15960147", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/15960147"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Proteinuria", "opacity": 0.9, "score": 1.0, "size": 14594.326117914849, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "A secondary aim was to determine if sufficient data was available to assess the effect of Paricalcitol for the management of proteinuria ", "name": "23509710", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23509710"},
+			{"category": "study", "color": "blue", "description": "Effects of oral paricalcitol on secondary hyperparathyroidism and proteinuria of kidney transplant patients ", "name": "23545517", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23545517"},
+			{"category": "study", "color": "blue", "description": "Paricalcitol seems to have a protective effect on proteinuria levels ", "name": "23320973", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23320973"},
+			{"category": "study", "color": "blue", "description": "Therefore the aim of our study was to evaluate the effect of paricalcitol on proteinuria in non dialysis CKD patients with secondary hyperparathyroidism treated according to Kidney Disease Improving Global Outcomes KDIGO guidelines ", "name": "23931873", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23931873"},
+			{"category": "study", "color": "blue", "description": "Two Spanish clinical trials and one Italian trial attempted to determine the effect of paricalcitol and vitamin D on residual proteinuria in various clinical circumstances PALIFE NEFROVID and PROCEED ", "name": "24089164", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/24089164"},
+			{"category": "study", "color": "blue", "description": "Effects of oral paricalcitol on hyperparathyroidism and proteinuria in peritoneal dialysis patients ", "name": "22073844", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/22073844"},
+			{"category": "study", "color": "blue", "description": "We subsequently analyzed the dipstick data to evaluate the effect of paricalcitol on proteinuria ", "name": "16316359", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/16316359"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Inflammation", "opacity": 0.9, "score": 1.0, "size": 15595.811562598768, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "In the present study we aimed to investigate the effects of paricalcitol on lipopolysaccharide LPS induced myocardial inflammation and to elucidate the underlying mechanisms ", "name": "26954764", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/26954764"},
+			{"category": "study", "color": "blue", "description": "The findings of our study suggest that paricalcitol exerts a protective effect against LPS induced myocardial inflammation by regulating the expression of cell adhesion molecules and TNF and by improving myocardial permeability ", "name": "26954764", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/26954764"},
+			{"category": "study", "color": "blue", "description": "Effect of paricalcitol and enalapril on renal inflammation oxidative stress in atherosclerosis ", "name": "26322179", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/26322179"},
+			{"category": "study", "color": "blue", "description": "To investigate the protective effect of paricalcitol and enalapril on renal inflammation and oxidative stress in ApoE knock out mice ", "name": "26322179", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/26322179"},
+			{"category": "study", "color": "blue", "description": "In conclusion brief course of the VDR agonist paricalcitol has profound effects on local inflammation via reduced T cell activation ", "name": "27239732", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/27239732"},
+			{"category": "study", "color": "blue", "description": "Effect of paricalcitol on endothelial function and inflammation in type 2 diabetes and chronic kidney disease ", "name": "25633573", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/25633573"},
+			{"category": "study", "color": "blue", "description": "In this study we investigated the effects of paricalcitol on inflammation and epithelial mesenchymal transition EMT after HHE induced renal tubular epithelial cell injury ", "name": "23690997", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23690997"},
+			{"category": "study", "color": "blue", "description": "Here the effect of the synthetic vitamin D analogue paricalcitol on renal inflammation was investigated in a mouse model of obstructive nephropathy ", "name": "18525004", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/18525004"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Renal Insufficiency, Chronic", "opacity": 0.9, "score": 1.0, "size": 10397.207708399179, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Effects of paricalcitol on urinary calcium in patients with chronic kidney disease stages 2 4 ", "name": "25707454", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/25707454"},
+			{"category": "study", "color": "blue", "description": "Paricalcitol has proved effective to control secondary hyperparathyroidism in chronic kidney disease in both dialysed and non dialysed patients with a low hypercalcaemia incidence ", "name": "26306956", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/26306956"},
+			{"category": "study", "color": "blue", "description": "Effect of paricalcitol vs calcitriol on hemoglobin levels in chronic kidney disease patients a randomized trial ", "name": "25781618", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/25781618"},
+			{"category": "study", "color": "blue", "description": "The objective is to determine the effect of oral paricalcitol on protein excretion in patients with proteinuric chronic kidney disease ", "name": "19596163", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/19596163"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Wounds and Injuries", "opacity": 0.9, "score": 1.0, "size": 10397.207708399179, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Protective effect of paricalcitol on cyclosporine induced renal injury in rats ", "name": "22483459", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/22483459"},
+			{"category": "study", "color": "blue", "description": "We evaluated the protective effect of paricalcitol on cyclosporine CsA induced renal injury using an experimental model of chronic CsA nephropathy ", "name": "22483459", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/22483459"},
+			{"category": "study", "color": "blue", "description": "Renoprotective effects of paricalcitol on gentamicin induced kidney injury in rats ", "name": "19940033", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/19940033"},
+			{"category": "study", "color": "blue", "description": "Effects of paricalcitol and enalapril on atherosclerotic injury in mouse aortas ", "name": "20720404", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/20720404"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Calcinosis", "opacity": 0.9, "score": 1.0, "size": 8239.592165010823, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "To assess a potentially different spectrum of actions we compared the effects of paricalcitol and calcitriol on remodeling and calcification of the aortic wall in sham operated and UNX ApoE mice on a diet with normal cholesterol content ", "name": "21159735", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/21159735"},
+			{"category": "study", "color": "blue", "description": "In uraemic rats with established secondary hyperparathyroidism we demonstrate differential effects of paricalcitol and doxercalciferol on aortic calcification and PWV independent of serum Ca P and Ca x P suggesting different mechanisms of action between VDRAs ", "name": "18644798", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/18644798"},
+			{"category": "study", "color": "blue", "description": "We conclude that paricalcitol has a different effect than calcitriol in VSMC calcification and that this could explain part of the differences observed in the clinical settings ", "name": "17352647", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/17352647"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Reperfusion Injury", "opacity": 0.9, "score": 1.0, "size": 5198.6038541995895, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "The effect of paricalcitol on renal ischemia reperfusion injury IRI has not been investigated ", "name": "23229926", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23229926"},
+			{"category": "study", "color": "blue", "description": "Effect of novel vitamin D receptor activator paricalcitol on renal ischaemia reperfusion injury in rats ", "name": "24112495", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/24112495"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Albuminuria", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Effect of paricalcitol on renin and albuminuria in non diabetic stage III IV chronic kidney disease a randomized placebo controlled trial ", "name": "23889806", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23889806"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Atherosclerosis", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Effect of paricalcitol and enalapril on renal inflammation oxidative stress in atherosclerosis ", "name": "26322179", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/26322179"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Cardiovascular Diseases", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "The Effect of Paricalcitol on Vascular Calcification and Cardiovascular Disease in Uremia Beyond PTH Control ", "name": "21603158", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/21603158"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Diabetes Mellitus", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "In the early stage of diabetic nephropathy paricalcitol treatment counterbalances the effect of diabetes on circulating ACE2 activity ", "name": "26697977", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/26697977"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Diabetic Nephropathies", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Effects of paricalcitol and aliskiren combination therapy on experimental diabetic nephropathy model in rats ", "name": "25532067", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/25532067"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Heart Diseases", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Paricalcitol may prove to have a substantial beneficial effect on cardiac disease and its outcome in patients with CKD ", "name": "20236614", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/20236614"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Hyperparathyroidism", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Effects of oral paricalcitol on hyperparathyroidism and proteinuria in peritoneal dialysis patients ", "name": "22073844", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/22073844"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Ischemia", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Effect of novel vitamin D receptor activator paricalcitol on renal ischaemia reperfusion injury in rats ", "name": "24112495", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/24112495"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Leukemia", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "We tested the effects of paricalcitol on the HL 60 leukemia cells studying cellular differentiation cell cycle changes apoptosis and cellular proliferation ", "name": "15225834", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/15225834"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Neoplasms", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Compared with their individual therapy combination of 5 FU and paricalcitol showed more significant reducing effect on numbers of grown tumors and large aberrant crypts foci ", "name": "27020656", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/27020656"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Pancreatic Neoplasms", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "We therefore investigated the anti proliferative effects of paricalcitol on the growth of pancreatic tumor cell lines in vitro and in vivo ", "name": "18094617", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/18094617"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Vascular Calcification", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "The Effect of Paricalcitol on Vascular Calcification and Cardiovascular Disease in Uremia Beyond PTH Control ", "name": "21603158", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/21603158"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "develop", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Heart Failure", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Preventing progression of cardiac hypertrophy and development of heart failure by paricalcitol therapy in rats ", "name": "21565836", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/21565836"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Hypercalciuria", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Hypercalciuria developed in six paricalcitol subjects and persisted from baseline in one placebo subject ", "name": "25029424", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/25029424"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Kidney Failure, Chronic", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "A randomized trial is needed to determine if paricalcitol affects the development of ESRD or mortality ", "name": "22223607", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/22223607"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "decrease", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Fibrosis", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Although combination therapy showed no additional effect on oxidative system renin angiotensin system and renal histology aliskiren plus paricalcitol significantly decreased interstitial fibrosis volume when compared to monotherapy Group A P vs Group A p 0 005 Group A P vs Group P p 0 002 ", "name": "25532067", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/25532067"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Hyperparathyroidism", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Oral paricalcitol is effective in decreasing posttransplant hyperparathyroidism and may have beneficial effects on renal allograft histology ", "name": "23601186", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23601186"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "control", "opacity": 0.9, "score": 1.0, "size": 10397.207708399179, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Hyperparathyroidism, Secondary", "opacity": 0.9, "score": 1.0, "size": 10397.207708399179, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Treatment with paricalcitol is effective in controlling secondary hyperparathyroidism in non dialysed patients with a wide safety margin ", "name": "22130286", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/22130286"},
+			{"category": "study", "color": "blue", "description": "Three hour daily hemodialysis with the use of high dose paricalcitol is associated with improved control of severe secondary hyperparathyroidism ", "name": "20337743", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/20337743"},
+			{"category": "study", "color": "blue", "description": "Hemodialysis patients receiving calcitriol or paricalcitol active vitamin D for control of secondary hyperparathyroidism VitD n 49 were compared with HD patients who were not n 30 ", "name": "17971312", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/17971312"},
+			{"category": "study", "color": "blue", "description": "Paricalcitol capsules for the control of secondary hyperparathyroidism in chronic kidney disease ", "name": "16553577", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/16553577"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Hyperparathyroidism", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "As the treatment of calciphylaxis is mainly empirical and controversial we decided to administer cinacalcet with paricalcitol for the control of hyperparathyroidism and sodium thiosulfate to improve the calcification of the arterioles ", "name": "18825648", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/18825648"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Renal Insufficiency, Chronic", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Paricalcitol capsules for the control of secondary hyperparathyroidism in chronic kidney disease ", "name": "16553577", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/16553577"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "cause", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Hypercalciuria", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Both calcitriol and paricalcitol caused hypercalciuria 9 and 7 fold vs control P 0 01 and polyuria increasing 2 6 and 2 2 fold vs control P 0 01 ", "name": "23926179", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23926179"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "benefit", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Heart Diseases", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Paricalcitol may prove to have a substantial beneficial effect on cardiac disease and its outcome in patients with CKD ", "name": "20236614", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/20236614"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Heart Failure", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Paricalcitol should provide additional clinical benefits over the standard treatment for chronic kidney and heart failure especially in cases of cardiorenal syndrome ", "name": "23430986", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23430986"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Renal Insufficiency, Chronic", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Vitamin D analogs such as paricalcitol and calcitriol have been shown to provide survival benefit for Stage 5 chronic kidney disease CKD patients possibly due to their positive impact on the cardiovascular system ", "name": "16371233", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/16371233"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "attenuate", "opacity": 0.9, "score": 1.0, "size": 8239.592165010823, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Inflammation", "opacity": 0.9, "score": 1.0, "size": 8239.592165010823, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Paricalcitol attenuates lipopolysaccharide induced myocardial inflammation by regulating the NF B signaling pathway ", "name": "26954764", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/26954764"},
+			{"category": "study", "color": "blue", "description": "Pretreatment with paricalcitol attenuates inflammation in ischemia reperfusion injury via the up regulation of cyclooxygenase 2 and prostaglandin E2 ", "name": "23229926", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23229926"},
+			{"category": "study", "color": "blue", "description": "Paricalcitol attenuates 4 hydroxy 2 hexenal induced inflammation and epithelial mesenchymal transition in human renal proximal tubular epithelial cells ", "name": "23690997", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23690997"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Wounds and Injuries", "opacity": 0.9, "score": 1.0, "size": 8239.592165010823, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "These results show that paricalcitol attenuated HHE induced renal tubular cell injury by suppressing inflammation and EMT process through inhibition of the NF B TGF Smad and catenin signaling pathways ", "name": "23690997", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23690997"},
+			{"category": "study", "color": "blue", "description": "While the anti apoptotic effect of paricalcitol has been demonstrated in various animal models it is not yet clear whether paricalcitol attenuates the apoptosis in gentamicin GM induced kidney injury ", "name": "24227945", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/24227945"},
+			{"category": "study", "color": "blue", "description": "Paricalcitol attenuates cyclosporine induced kidney injury in rats ", "name": "20237458", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/20237458"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Fibrosis", "opacity": 0.9, "score": 1.0, "size": 10397.207708399179, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Paricalcitol Attenuates Cardiac Fibrosis and Expression of Endothelial Cell Transition Markers in Isoproterenol Induced Cardiomyopathic Rats ", "name": "27065465", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/27065465"},
+			{"category": "study", "color": "blue", "description": "Subsequent paricalcitol treatment attenuated the isoproterenol induced cardiac fibrosis p 0 006 ", "name": "27065465", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/27065465"},
+			{"category": "study", "color": "blue", "description": "Paricalcitol attenuates renal interstitial fibrosis in obstructive nephropathy ", "name": "17082242", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/17082242"},
+			{"category": "study", "color": "blue", "description": "Compared with vehicle controls paricalcitol significantly attenuated renal interstitial fibrosis in mouse kidney after ureteral obstruction as demonstrated by a reduced interstitial volume decreased collagen deposition and repressed mRNA expression of fibronectin and type I and type III collagens ", "name": "17082242", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/17082242"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Reperfusion Injury", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Pretreatment with paricalcitol attenuates inflammation in ischemia reperfusion injury via the up regulation of cyclooxygenase 2 and prostaglandin E2 ", "name": "23229926", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23229926"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Ureteral Obstruction", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Compared with vehicle controls paricalcitol significantly attenuated renal interstitial fibrosis in mouse kidney after ureteral obstruction as demonstrated by a reduced interstitial volume decreased collagen deposition and repressed mRNA expression of fibronectin and type I and type III collagens ", "name": "17082242", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/17082242"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "associate", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Bone Diseases", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "No changes in other biochemical parameters related to bone disease could be associated to paricalcitol with data compiled in our study ", "name": "23320973", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/23320973"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Hypercalcemia", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Compared with the control group the RR for hypercalcemia associated with paricalcitol use was 2 25 95 CI 0 81 6 26 P 0 12 ", "name": "22223607", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/22223607"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Proteinuria", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Our results demonstrate that the reduction in proteinuria was associated with paricalcitol treatment and the reduction in proteinuria was independent of concomitant use of agents that block the RAAS ", "name": "16316359", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/16316359"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "ameliorate", "opacity": 0.9, "score": 1.0, "size": 10397.207708399179, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Fibrosis", "opacity": 0.9, "score": 1.0, "size": 10397.207708399179, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Paricalcitol injections may ameliorate isoproterenol induced cardiac fibrosis possibly through regulating cell transition ", "name": "27065465", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/27065465"},
+			{"category": "study", "color": "blue", "description": "Because vitamin D analogs can inhibit catenin in other tissues we tested whether the vitamin D analog paricalcitol could ameliorate podocyte injury proteinuria and renal fibrosis in adriamycin ADR nephropathy ", "name": "21030600", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/21030600"},
+			{"category": "study", "color": "blue", "description": "We investigated whether paricalcitol ameliorates tubular dysfunction and fibrosis in gentamicin GM induced renal injury ", "name": "19940033", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/19940033"},
+			{"category": "study", "color": "blue", "description": "These studies suggest that paricalcitol is able to ameliorate renal interstitial fibrosis in obstructive nephropathy possibly by preserving tubular epithelial integrity through suppression of EMT ", "name": "17082242", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/17082242"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Wounds and Injuries", "opacity": 0.9, "score": 1.0, "size": 10397.207708399179, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Blockade of Wnt catenin signaling by paricalcitol ameliorates proteinuria and kidney injury ", "name": "21030600", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/21030600"},
+			{"category": "study", "color": "blue", "description": "Because vitamin D analogs can inhibit catenin in other tissues we tested whether the vitamin D analog paricalcitol could ameliorate podocyte injury proteinuria and renal fibrosis in adriamycin ADR nephropathy ", "name": "21030600", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/21030600"},
+			{"category": "study", "color": "blue", "description": "These results suggest that paricalcitol may ameliorate cisplatin induced renal injury by suppressing the fibrotic apoptotic and proliferative factors ", "name": "22449373", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/22449373"},
+			{"category": "study", "color": "blue", "description": "Combination therapy with paricalcitol and enalapril ameliorates cardiac oxidative injury in uremic rats ", "name": "19033720", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/19033720"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Proteinuria", "opacity": 0.9, "score": 1.0, "size": 8239.592165010823, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Blockade of Wnt catenin signaling by paricalcitol ameliorates proteinuria and kidney injury ", "name": "21030600", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/21030600"},
+			{"category": "study", "color": "blue", "description": "Because vitamin D analogs can inhibit catenin in other tissues we tested whether the vitamin D analog paricalcitol could ameliorate podocyte injury proteinuria and renal fibrosis in adriamycin ADR nephropathy ", "name": "21030600", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/21030600"},
+			{"category": "study", "color": "blue", "description": "Administration of paricalcitol also ameliorated established proteinuria ", "name": "21030600", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/21030600"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Renal Insufficiency", "opacity": 0.9, "score": 1.0, "size": 5198.6038541995895, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "In this study we show that paricalcitol also ameliorates the renal insufficiency induced loss of bone mineral and the mechanical competence of bone ", "name": "16734389", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/16734389"},
+			{"category": "study", "color": "blue", "description": "Therefore paricalcitol can efficiently ameliorate renal insufficiency induced loss of bone mineral and mechanical competence of bone ", "name": "16734389", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/16734389"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Colitis", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "In trinitrobenzene sulfonic acid colitis models paricalcitol ameliorated colitis attenuated the increase in mucosal barrier permeability and inhibited long MLCK induction and MLC phosphorylation ", "name": "26287999", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/26287999"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Inflammation", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Paricalcitol and enalapril combo treatment ameliorates renal inflammation as well as oxidative stress in atherosclerotic animals ", "name": "26322179", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/26322179"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "aggravate", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Fibrosis", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Paricalcitol aggravates perivascular fibrosis in rats with renal insufficiency and low calcitriol ", "name": "17667981", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/17667981"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Renal Insufficiency", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Paricalcitol aggravates perivascular fibrosis in rats with renal insufficiency and low calcitriol ", "name": "17667981", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/17667981"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "agent", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Anemia, Refractory, with Excess of Blasts", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "In summary paricalcitol given as a single agent to MDS patients is therapeutically not very efficacious further trials of the Vitamin D analog should be considered in combination with other approaches ", "name": "16164982", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/16164982"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Hyperparathyroidism, Secondary", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "Paricalcitol a new agent for the management of secondary hyperparathyroidism in patients undergoing chronic renal dialysis ", "name": "10321413", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/10321413"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Leukemia", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "In order to explore paricalcitol as a potential agent against leukemia we tested its effects on HL 60 and U937 leukemia cell lines ", "name": "12618899", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/12618899"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Myelodysplastic Syndromes", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "In summary paricalcitol given as a single agent to MDS patients is therapeutically not very efficacious further trials of the Vitamin D analog should be considered in combination with other approaches ", "name": "16164982", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/16164982"}
+	]},
+		{"category": "disease", "color": "blue", "name": "Preleukemia", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "In summary paricalcitol given as a single agent to MDS patients is therapeutically not very efficacious further trials of the Vitamin D analog should be considered in combination with other approaches ", "name": "16164982", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/16164982"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "affect", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Kidney Failure, Chronic", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "A randomized trial is needed to determine if paricalcitol affects the development of ESRD or mortality ", "name": "22223607", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/22223607"}
+		]}
+	]},
+	{"category": "relation", "color": "blue", "name": "achieve", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "triangle", "url": "http://go/pikm",
+	"children": [
+		{"category": "disease", "color": "blue", "name": "Hyperparathyroidism", "opacity": 0.9, "score": 1.0, "size": 0.0, "type": "square", "url": "http://go/pikm",
+		"children": [
+			{"category": "study", "color": "blue", "description": "These studies indicate that effective control of hyperparathyroidism can be achieved with paricalcitol therapy with minimal perturbation of serum calcium and phosphorus levels and may have a therapeutic advantage over current treatment strategies ", "name": "9808145", "opacity": 0.9, "score": 1.0, "size": 7500, "type": "circle", "url": "http://www.ncbi.nlm.nih.gov/pubmed/9808145"}
+	]}
+]}
+]}

@@ -1,0 +1,381 @@
+
+<html>
+<head>
+	<title>Medline</title>
+  
+<style type="text/css"> 
+
+ input[type="text"] {
+ background: #fff;
+    border: 1px solid #ddd;
+    padding: 11px;
+    border-bottom: 2px solid #ddd;
+    width: 84%;
+	float:left;
+	margin-right:1%;
+    margin-top: 5px;
+}
+.search-box {
+ width: 800px;
+overflow:hidden;
+    margin: 0px auto;
+    box-shadow: 3px 3px 5px rgba(221, 221, 221, 0.5);
+    background: #fff;
+    padding: 20px;
+    font-family: sans-serif;
+    border: 1px solid #ddd;
+}
+ input[type="button"] {
+     background: #7777d4;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 5px;
+    border: 0px;
+    border-radius: 4px;
+    padding: 12px 15px;
+	width:15%;
+ }
+ .clearfix {
+	clear: both;
+ }
+</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		var file_data=[];
+		var file_data1='';
+		/*--start search by disease name ----*/
+		$(document).ready(function(){
+			$("#searchByDisease").click(function(){
+				var keyword= $("#keyword").val();
+				var gene_associ= $("#gene_associ2").val();
+				if(gene_associ=='')
+				{
+					gene_associ='0.0';
+				}
+				$('#results').html('');
+				var res = keyword.split(",");
+				var key="";
+				for(var i = 0; i < res.length; i++) {
+
+					res[i] = res[i].replace(/^\s*/, "").replace(/\s*$/, "");
+					key=key+res[i]+" "+"OR"+" ";
+				}
+
+				var result =key.slice(0, -4)
+				var data_string = 'q=disease:('+result+')&rows=1000&wt=json';
+				//$('#graph_disease_link').attr('href','graph.html?search_data='+data_string);
+				$.ajax({
+					type : "GET",
+					data:data_string,
+					url: "http://54.193.228.61:8080/solr/getsearchmedline",
+					dataType: "json",
+					success: function(res) {
+						var docs= res.response.docs;
+
+						if(docs!=""){
+							$.each(docs, function(i, item) {
+							if(item.genetic_association>=gene_associ.trim())
+							{
+								$('#results').prepend($('<tr><td>'+item.id+'</td><td>'+item.gene_symbol+'</td><td>'+item.genetic_association +'</td><td>'+item.disease+'</td></tr>'));
+								return;   
+							}
+							});
+
+						}else{
+
+							$('#results').prepend($('<tr><td colspan="5">No Result Found</td></tr>'));
+						}
+					}
+				});
+
+			});
+
+		});	   
+	/*--end search by disease name ----*/
+
+	/*--start search by multiple gene symbol ----*/	
+
+	$(document).ready(function(){
+			$("#searchMultipleGeneS").click(function(){
+				var keyword= $("#keyword3").val();
+				var gene_associ= $("#gene_associ").val();
+				if(gene_associ=='')
+				{
+				gene_associ='0.0';
+				}
+				$('#results3').html('');
+                
+                var res = keyword.split(",");
+				var res_len=res;
+				key="";
+				for(var i = 0; i < res.length; i++) {
+
+					res[i] = res[i].replace(/^\s*/, "").replace(/\s*$/, "");
+					key=key+res[i]+"+"+"OR"+"+";
+				}
+				var result =key.slice(0, -4);
+				var data_string='';
+				if(keyword!='')
+				{
+				 data_string = 'q=gene_symbol:('+result+')&rows=1000&wt=json';
+				}else{
+				 data_string = 'q=genetic_association:('+gene_associ+')&rows=1000&wt=json';
+				}
+				$('#graph_gene_link').attr('href','graph.html?search_data='+data_string);
+				$.ajax({
+					type : "GET",
+					data:data_string,
+					url: "http://54.193.228.61:8080/solr/getsearchmedline",
+					dataType: "json",
+					success: function(res) {
+						var docs= res.response.docs;
+						var unique_disease = {};
+						var unique_disease_counter = {};
+						var loop_counter=0;
+						if(docs!=""){
+						if(res_len.length>=2 && keyword!='')
+						{
+							$.each(docs, function(i, item) {
+								if(item.genetic_association>=gene_associ.trim())
+								{
+									if(unique_disease[item.disease])
+									{
+										unique_disease[item.disease]=item.gene_symbol+","+unique_disease[item.disease];
+										unique_disease_counter[item.disease]=parseInt(unique_disease_counter[item.disease])+1;
+										
+										if(unique_disease_counter[item.disease]>=res_len.length){
+											
+											$('#results3').prepend($('<tr><td>'+item.id+'</td><td>'+unique_disease[item.disease]+'</td><td>'+item.genetic_association +'</td><td>'+item.disease+'</td></tr>'));
+											loop_counter++;
+										}
+									}else{
+										unique_disease[item.disease]=item.gene_symbol;
+										unique_disease_counter[item.disease]=1;
+									}
+								}
+							});
+						}else{
+							$.each(docs, function(i, item) {
+								if(item.genetic_association>=gene_associ.trim())
+								{
+									$('#results3').prepend($('<tr><td>'+item.id+'</td><td>'+item.gene_symbol+'</td><td>'+item.genetic_association +'</td><td>'+item.disease+'</td></tr>'));
+									loop_counter++;
+								}
+							});
+						}	
+						if(loop_counter==0)
+						{
+							$('#results3').prepend($('<tr><td colspan="5">No Result Found</td></tr>'));
+						}
+							return;
+						}else{
+
+							$('#results3').prepend($('<tr><td colspan="5">No Result Found</td></tr>'));
+							return;       
+						}
+					}
+				});
+
+			});
+
+		});	
+	/*--end search by multiple gene symbol ----*/	
+
+	/*--start search by file contents(gene symbol) ----*/
+
+	$(document).ready(function(){
+			$("#searchByTextFile").click(function(){
+			document.getElementById('fileinput').value='';
+			$('#searchByTextFileResult').html('');
+			var keyword= file_data1;
+			var gene_associ= $("#gene_associ").val();
+			if(gene_associ=='')
+			{
+				gene_associ='0.0';
+			}
+				
+            var res = keyword.split(",");
+			var res_len=res;
+			key="";
+			for(var i = 0; i < res.length; i++){
+				res[i] = res[i].replace(/^\s*/, "").replace(/\s*$/, "");
+				key=key+res[i]+"+"+"OR"+"+";
+			}
+			var result =key.slice(0, -4);
+			var data_string='';
+			if(keyword!='')
+			{
+				data_string = 'q=gene_symbol:('+result+')&rows=1000&wt=json';
+			}else{
+				 data_string = 'q=genetic_association:('+gene_associ+')&rows=1000&wt=json';
+			}
+			$.ajax({
+					type : "GET",
+					data:data_string,
+					url: "http://54.193.228.61:8080/solr/getsearchmedline",
+					dataType: "json",
+					success: function(res) {
+						var docs= res.response.docs;
+						var unique_disease = {};
+						var unique_disease_counter = {};
+						var loop_counter=0;
+						if(docs!=""){
+						if(res_len.length>=2 && keyword!='')
+						{
+							$.each(docs, function(i, item) {
+								if(item.genetic_association>=gene_associ.trim())
+								{
+									if(unique_disease[item.disease])
+									{
+										unique_disease[item.disease]=item.gene_symbol+","+unique_disease[item.disease];
+										unique_disease_counter[item.disease]=parseInt(unique_disease_counter[item.disease])+1;
+										
+										if(unique_disease_counter[item.disease]>=res_len.length){
+											
+											$('#searchByTextFileResult').prepend($('<tr><td>'+item.id+'</td><td>'+unique_disease[item.disease]+'</td><td>'+item.genetic_association +'</td><td>'+item.disease+'</td></tr>'));
+											loop_counter++;
+										}
+									}else{
+										unique_disease[item.disease]=item.gene_symbol;
+										unique_disease_counter[item.disease]=1;
+									}
+								}
+							});
+						
+						}else{
+							$.each(docs, function(i, item) {
+								if(item.genetic_association>=gene_associ.trim())
+								{
+									$('#searchByTextFileResult').prepend($('<tr><td>'+item.id+'</td><td>'+item.gene_symbol+'</td><td>'+item.genetic_association +'</td><td>'+item.disease+'</td></tr>'));
+									loop_counter++;
+								}
+							});
+						}
+						
+						if(loop_counter==0)
+						{
+							$('#searchByTextFileResult').prepend($('<tr><td colspan="5">No Result Found</td></tr>'));
+						}
+						
+						return;	
+						}else{
+
+							$('#results5').prepend($('<tr><td colspan="5">No Result Found</td></tr>'));
+							return;       
+						}
+											
+
+					}
+				});
+
+			});
+		}); 		
+		
+	/*--end search by file contents(gene symbol) ----*/
+
+	</script>
+</head>
+<body> 
+<div class="search-box"> 
+<h2>Disease Search</h2> 
+<span> 
+<input type="text" name="keyword" id="keyword" >
+<input type="text" placeholder="Genetic Association Threshold (Default: 0)"  name="gene_associ3" id="gene_associ2" >
+<input type="button" value="search" id="searchByDisease" >
+</span>
+<!--<div class="clearfix">
+	<a id="graph_disease_link" href="graph.html">Graph</a>
+</div>-->
+<table border="1" style="width: 100%;border: 1px solid #c5c5c5;margin-top: 10px;">
+	<tr style="border: 1px solid #c5c5c5;">
+		<th>id</th>
+		<th>gene_symbol</th><th>genetic_association</th><th>disease</th>
+	</tr>
+	<tbody id="results">				
+
+	</tbody></table>
+
+	<br><br>
+		
+			
+			
+			
+<h2>Gene Symbol Search</h2>  
+
+<span> 	 <input type="text" placeholder="Enter Gene Symbol(s)" name="keyword3" id="keyword3" >
+
+	<input type="button" value="search" id="searchMultipleGeneS" >
+	</span>
+
+<a id="graph_gene_link" href="graph.html">Graph</a>
+<table border="1" style="width: 100%;border: 1px solid #c5c5c5;margin-top: 10px;">
+		<tr style="border: 1px solid #c5c5c5;">
+			<th>id</th>
+			<th>gene_symbol</th><th>genetic_association</th><th>disease</th>
+		</tr>
+		<tbody id="results3">				
+</tbody></table>
+</br>
+<table style="width: 100%;">
+		<tr >
+		<td>
+			<input style="width: 100%;" type="text" placeholder="Genetic Association Threshold (Default: 0)"  name="gene_associ3" id="gene_associ" >
+		</td>	
+		</tr>
+</table>
+</br>
+
+
+<h2>Upload Text File</h2>  
+
+<span> 	<input type="file" id="fileinput" />
+
+<input type="button" value="search" id="searchByTextFile" >
+	</span>
+
+<div id="tttt" style="word-wrap: break-word;">
+</div>
+<table border="1" style="width: 100%;border: 1px solid #c5c5c5;margin-top: 10px;">
+		<tr style="border: 1px solid #c5c5c5;">
+			<th>id</th>
+			<th>gene_symbol</th><th>genetic_association</th><th>disease</th>
+		</tr>
+		<tbody id="searchByTextFileResult">				
+</tbody></table>
+
+</div>
+</body>
+
+		</html>
+		<script>
+		
+		function readSingleFile(evt) {
+			//Retrieve the first (and only!) File from the FileList object
+			var f = evt.target.files[0]; 
+
+			if (f) {
+			  var r = new FileReader();
+			  r.onload = function(e) { 
+					var contents = e.target.result;
+					var data_array=[];
+					file_data=contents.split("\n");
+					var j=0;
+					for(i=0;i<file_data.length;i++)
+					{
+						if(file_data[i].trim()!='')
+						{
+							data_array[j]=file_data[i];
+							j++;
+						}
+					}
+					file_data1=data_array.toString();
+					
+				}
+			  r.readAsText(f);
+			} else { 
+			  alert("Failed to load file");
+			}
+		  }		
+		
+		document.getElementById('fileinput').addEventListener('change', readSingleFile, false);
+		</script>

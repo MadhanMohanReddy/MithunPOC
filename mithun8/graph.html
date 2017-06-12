@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta charset="utf-8">
+
+
+<style>
+.node circle {
+  cursor: pointer;
+  stroke: #3182bd;
+  stroke-width: 1.5px;
+}
+
+.node text {
+  font: 10.5px sans-serif;
+  font-weight: bolder;
+  pointer-events: none;
+  text-anchor: middle;
+}
+
+line.link {
+  fill: none;
+  stroke-width: 1.5px;
+}
+    
+div.tooltip {	
+    position: absolute;			
+    text-align: left;			
+    width: 350px;					
+    height: 180px;					
+    padding: 2px;				
+    font: 12px sans-serif;		
+    background: lightsteelblue;	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;			
+}
+#nodes{
+	display: inline-block;
+	width: 20%;
+	float: left;
+}
+#graph{
+	display: inline-block;
+	width: 79%;
+}
+.legend rect {
+  fill:white;
+  stroke:black;
+  opacity:0.8;
+</style>
+<head>
+    <title>
+    I2E Textual Evidence Viz
+    </title>
+</head>
+<body>
+	<div id="nodes"></div>
+	<div id="graph"></div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+<script>
+
+var firstTime = true, nodeCounter = 0
+    
+var width = 1000,//window.innerWidth,
+    height = window.innerHeight-20,
+    root;
+
+var myUrl = window.location.href;
+var myHash = window.location.hash
+console.log(myHash);
+if(myHash != "")
+    {var myJSON = myHash.substring(1,myHash.length) + '.json';
+    console.log("Detected:"+myJSON)} 
+else 
+    {myJSON = "paricalcitol.json"
+    console.log("Undetected:"+myJSON)};
+    
+    
+var force = d3.layout.force()
+    .linkDistance(100)
+    .charge(-220)
+    .gravity(.1)
+    .size([width, height])
+    .on("tick", tick);
+
+var svg = d3.select("#graph").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+	
+var thresholdData = [{"threshold": "score: [0.75,1.0]", "color": "red"}, 
+					{"threshold": "score: [0.5,0.75]", "color": "blue"}, 
+					{"threshold": "score: [0.25,0.5]", "color": "violet"},
+					{"threshold": "score: [0,0.25]", "color": "green"}]  	
+// add legend   
+var legend = svg.append("g")
+				.attr("class", "legend")
+				.attr("height", 100)
+				.attr("width", 100)
+				.attr('transform', 'translate(0,50)')
+				//.attr("style", "outline: thin solid grey;");
+  
+legend.selectAll('rect')
+      .data(thresholdData)
+      .enter()
+      .append("rect")
+	  .attr("x", 70)
+      .attr("y", function(d, i){ return i *  20;})
+	  .attr("width", 10)
+	  .attr("height", 10)
+	  .style("fill", function(d) { 
+        return d.color;
+      });
+      
+legend.selectAll('text')
+  .data(thresholdData)
+  .enter()
+  .append("text")
+  .attr("x", 90)
+  .attr("y", function(d, i){ return i *  20 + 9;})
+  .text(function(d) {
+	return d.threshold;
+  });
+    
+// Define the div for the tooltip
+var div = d3.select("#graph").append("div")	
+    .attr("class", "tooltip")				
+    .style("opacity", 0)
+	.style("display", "none");
+    
+
+img1 = svg.append('image')
+                .attr("xlink:href", "construction.gif")
+                .attr("x", "10")
+                .attr("y", "10")
+                .attr("width", width-10)
+                .attr("height", height-10)
+                .attr("opacity", .05);
+
+var link = svg.selectAll(".link"),
+    node = svg.selectAll(".node");
+
+    
+d3.json("http://54.193.228.61:8080/solr/getsearchmedline?"+location.search.split('search_data=')[1], function(error, json) {
+  if (error) throw error;
+  root = [];
+  nodesJson = json.response.docs;
+  uniqueDiseases = getUniqueDiseases(json.response.docs);
+  
+  createNodesList();	
+  
+  update();
+  update();
+});
+function createNodesList() {
+	var list = d3
+				.select('#nodes')
+				.append("div")
+				.style("height", height + "px")				
+				.style("overflow-y", "scroll");
+				
+	
+	var selectAllBoxes = list						
+							.append("input")
+							.attr("type", "checkbox")
+							.on("click", function() {
+								if (this.checked === true) { 
+									root = [];
+									d3.selectAll('input').property("checked", true);
+									setupRootElements(nodesJson);
+									update();
+								} else {
+									d3.selectAll('input').property("checked", false);
+									root = [];
+									update();								
+								}
+							});
+							
+	var selectAllBoxesLabel = list
+								.append('label')
+								.text("Select All");
+								
+	var selectAllBoxesDiv = list
+					.append("div")
+					.style("border-bottom", "1px solid grey");
+					
+	var labelEnter = list
+						.selectAll("div")
+						.data(uniqueDiseases)
+						.enter()
+						.append("div");
+	
+	labelEnter
+		.append("input")
+		.attr("type", "checkbox")
+		.attr("class", "relationCheck")
+		.on("click", addNode);
+	
+	labelEnter
+		.append('label')
+		.text(function(d) { return d.name; });
+}
+function addNode(node) {
+	firstTime = false;
+	if (this.checked === true) {
+		var rNodes = nodesJson.filter(function(v) {
+			return v.disease === node.name;
+		});
+		setupRootElements(rNodes);	
+	} else {
+		root.forEach(function(rNode){
+			var matchNode = rNode.children.find(function(rcNode){return node.name==rcNode.name});
+			if (matchNode) {
+				rNode.children.splice(rNode.children.indexOf(matchNode), 1);
+			}			
+		});
+	}	
+	click(node);
+}
+function setupRootElements(rNodes) {
+	var graphicalNodes = getGraphicalNodes(rNodes);
+	if (root.length === 0) {
+		root = root.concat(graphicalNodes);
+	} else {
+		graphicalNodes.forEach(function(gNode) {
+			var rNode = root.filter(function(v) {
+				return v.name === gNode.name;
+			})[0];
+			if (rNode) {
+				rNode.children = rNode.children.concat(gNode.children);
+			} else {
+				root.push(gNode);
+			} 
+		});	
+	}
+}
+function getUniqueDiseases(nodes) {
+	var uniques = [];
+	nodes.forEach(function(node) {
+		var unique = uniques.filter(function(v) {
+			return v.name === node.disease;
+		})[0];
+		if(!unique) {
+			uniques.push({"name": node.disease}); 
+		}
+	});
+	return uniques;
+}
+function getGraphicalNodes(nodes) {
+	var graphNodes = [];
+	nodes.forEach(function(node) {
+		var graphNode = graphNodes.filter(function(v) {
+			return v.name === node.gene_symbol[0];
+		})[0];
+		
+		if (graphNode) {
+			graphNode.children.push({"category": "relation", "name": node.disease, "opacity": 0.9, "size": 21250, "genetic_association": node.genetic_association});
+		} else {
+			graphNode = { "category": "gene", "name": node.gene_symbol[0], "opacity": 0.9, "size": 90000, "children": [{ "category": "relation", "color": "blue", "name": node.disease, "opacity": 0.9, "size": 21250, "genetic_association": node.genetic_association }] };
+			graphNodes.push(graphNode);
+		}
+	});
+	return graphNodes;
+};
+
+function update() {
+  var nodes = flatten(root);
+  var links = [];    //links = d3.layout.tree().links(nodes);
+  nodes.forEach(function(node, index) {
+	if (node.children) {
+		node.children.forEach(function(childNode) {
+			links.push({"source": index, "target": nodes.findIndex(function(vChildNode) {return vChildNode.name ===  childNode.name})});
+		});	
+	}	
+  });
+  
+  closeAll(nodes);
+      
+  // Restart the force layout.
+  force
+      .nodes(nodes)
+      .links(links)
+      .start();
+    
+   // Update links.
+  link = link.data(links, function(d) { return d.target.name + "_" + d.source.name; });
+
+  link.exit().remove();
+
+  link.enter().insert("line", ".node")
+      .attr("class", "link")
+	  .attr("stroke", function(d) {
+		var targetChildNode = d.source.children.find(function(vNode){return vNode.name===d.target.name});	
+		if (targetChildNode) {
+			var geneticAssocation = targetChildNode.genetic_association;
+			if (geneticAssocation > 0.75) {
+				return 'red';
+			} else if (geneticAssocation > 0.5 && geneticAssocation <= 0.75) {
+				return 'blue';
+			} else if (geneticAssocation > 0.25 && geneticAssocation <= 0.5) {
+				return 'violet';
+			} else if (geneticAssocation <= 0.25) {
+				return 'green';
+			}
+		}				  
+		
+	  });
+
+  // Update nodes.
+  node = node.data(nodes, function(d) { return d.name; });
+
+  node.exit().remove();
+
+  var nodeEnter = node.enter().append("g")
+      .attr("class", "node")
+      //.on("click", click)
+      .on("mouseover", mouseover)
+      .on("mouseout",mouseout)
+      .call(force.drag);
+
+  nodeEnter.append("circle")
+      .attr("r", function(d) { return Math.sqrt(d.size) / 10 || 4.5; });
+
+  nodeEnter.append("text")
+      .attr("dy", ".35em")
+      .text(function(d) { return d.name; });
+
+  node.select("circle")
+      .style("fill", color);    
+}
+
+function tick() {
+  link.attr("x1", function(d) { return d.source.x; })
+      .attr("y1", function(d) { return d.source.y; })
+      .attr("x2", function(d) { return d.target.x; })
+      .attr("y2", function(d) { return d.target.y; });
+
+  node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+}
+
+function color(d) {
+  return d._children ? "lightgreen"// collapsed package
+      : d.children ? "#c6dbef" // expanded package
+      : "#fd8d3c"; // leaf node
+}
+
+// Toggle children on click.
+function click(d) {
+  if (d3.event && d3.event.defaultPrevented) return; // ignore drag
+  if (d.category=="study"){window.open(d.url,'_blank')};
+    if (d.children) {
+    d._children = d.children;
+    d.children = null;
+  } else {
+    d.children = d._children;
+    d._children = null;
+    ;
+  }
+  update();
+}
+    
+function mouseover(d) {
+    if(d.category=="study"){
+            div.transition()		
+                .duration(200)		
+                .style("opacity", .9);		
+            div	.html("Evidence: "+ d.description + "<p>" + "Pubmed ID: " + d.name)	
+                .style("left", (d3.event.pageX) + "px")		
+                .style("top", (d3.event.pageY - 28) + "px");	
+    console.log('Mouseing over');
+    }
+}
+    
+function mouseout(d){
+     div.transition()		
+                .duration(500)		
+                .style("opacity", 0);
+    console.log('Mousing out');
+}
+
+
+
+function closeAll(nodes) {
+    if(firstTime){
+        nodes.forEach(function(d){
+			if(d.category=="relation")
+			{d._children = d.children;
+			 d.children = null};
+			if(d.category=="disease")
+			{d._children = d.children;
+			d.children = null;
+			firstTime = false}
+		});
+    }
+}
+    
+// Returns a list of all nodes under the root.
+function flatten(root) {
+  var nodes = [];
+
+  function recurse(node) {
+    if (Array.isArray(node)) node.forEach(recurse);
+	if (node.children) node.children.forEach(recurse);
+	if (!Array.isArray(node)) {
+		var matchedNode = nodes.find(function(vNode){return vNode.name===node.name});
+		if (matchedNode) {
+			//node.id = matchedNode.id;
+		} else {
+			//if (!node.id) node.id = ++nodeCounter;
+			nodes.push(node);
+		}		
+	}  
+  }
+
+  recurse(root);
+  return nodes;
+}
+
+</script>
+
